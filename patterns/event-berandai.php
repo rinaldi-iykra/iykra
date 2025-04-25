@@ -17,24 +17,24 @@
 <main>
     <div class="bg-white">
         <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="flex isolate px-8 py-8 lg:px-14 lg:py-14">
+            <div class="px-8 py-8 lg:px-14 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
-                        <h1 class="iykra-sg text-6xl text-black">BerandAI</h1>
+                        <h1 class="iykra-sg text-6xl text-black gs_reveal gs_reveal_fromLeft">BerandAI</h1>
                     </div>
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-1">
 
                     </div>
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
-                        <p class="iykra-gs text-2xl text-black pb-4">Showcase Inovasi AI & Kolaborasi Industri.</p>
+                        <p class="iykra-gs text-2xl text-black pb-4 gs_reveal">Showcase Inovasi AI &<br/>Kolaborasi Industri.</p>
                     </div>
                 </div>
             </div>
-            <div class="flex isolate px-8 lg:px-14">
-                <div class="h-full space-y-4 iykra-event-banner-2 shadow-lg rounded-xl">
-                    <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
-                        <div class="col-span-1 justify-center text-white py-14">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/berandai-logo.png" class="px-10 pb-14"/>
+            <div class="flex px-8 lg:px-14">
+                <div class="h-full space-y-4 iykra-event-banner-2 shadow-lg rounded-xl w-full">
+                    <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 w-full">
+                        <div class="col-span-1 justify-center text-white py-14 w-full gs_reveal">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/berandai-logo.png" class="px-10 pb-14 object-cover w-full"/>
                             <div class="mx-14 space-y-4 pt-14">
                                 <a class="btn-disabled text-gs text-base rounded-full px-14 py-3">Akan Datang</a>
                             </div>
@@ -51,7 +51,7 @@
                 <div class="">
                     <div class="w-full relative">
                         <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5">
-                            <div class="content-start sm:col-span-1 md:col-span-1 lg:col-span-2">
+                            <div class="content-start sm:col-span-1 md:col-span-1 lg:col-span-2 gs_reveal gs_reveal_fromLeft">
                                 <p class="iykra-sg text-4xl">Apa Itu BerandAI?</p>
                             </div>
                             <div class="content-start sm:col-span-1 md:col-span-1 lg:col-span-3 py-4 lg:py-0 lg:px-8">
@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 mt-4">
-                            <div class="content-start sm:col-span-1 md:col-span-1 lg:col-span-2 space-y-4">
+                            <div class="content-start sm:col-span-1 md:col-span-1 lg:col-span-2 space-y-4 gs_reveal">
                                 <p class="iykra-gs text-xl">BerandAI adalah event industri AI yang mempertemukan perusahaan, praktisi AI, dan talenta berbakat untuk mendiskusikan serta memamerkan implementasi AI dalam bisnis. Sebagai platform kolaborasi, <b class="iykra-sg">BerandAI menjadi wadah bagi perusahaan untuk mengeksplorasi penerapan AI, membangun kemitraan strategis, serta berinteraksi dengan komunitas AI dan teknologi.</b></p>
                                 <p class="iykra-gs text-xl">Acara ini juga menjadi ajang bagi talenta AI terlatih untuk mempresentasikan solusi yang telah mereka kembangkan, memberikan peluang bagi perusahaan untuk melihat langsung potensi AI dalam berbagai sektor.</p>
                             </div>
@@ -68,19 +68,19 @@
 
                             <div class="content-start hidden sm:hidden md:hidden lg:block sm:col-span-1 md:col-span-1 lg:col-span-2">
                                 <div class="flex isolate">
-                                    <div class="swiper default-carousel-event swiper-container" style="width:100% !important;">
+                                    <div class="swiper default-carousel-event swiper-container rounded-xl" style="width:100% !important;">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide rounded-xl">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-1.png" class="rounded-xl"/>
+                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-1.png" class="rounded-xl object-cover w-full"/>
                                             </div>
                                             <div class="swiper-slide rounded-xl">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-2.png" class="rounded-xl"/>
+                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-2.png" class="rounded-xl object-cover w-full"/>
                                             </div>
                                             <div class="swiper-slide rounded-xl">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-3.png" class="rounded-xl"/>
+                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-3.png" class="rounded-xl object-cover w-full"/>
                                             </div>
                                             <div class="swiper-slide rounded-xl">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-4.png" class="rounded-xl"/>
+                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/berandai/about-berandai-4.png" class="rounded-xl object-cover w-full"/>
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-center"></div>
@@ -123,16 +123,16 @@
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-                            <div class="content-start w-full sm:col-span-1 md:col-span-1 lg:col-span-2">
+                            <div class="content-start w-full sm:col-span-1 md:col-span-1 lg:col-span-2 gs_reveal gs_reveal_fromLeft">
                                 <p class="iykra-sg text-4xl">Kenapa BerandAI?</p>
                             </div>
                             <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-3 py-4 lg:py-0 lg:px-8">
                             </div>
                             <div class="content-start w-full sm:col-span-1 md:col-span-1 lg:col-span-2">
                             </div>
-                            <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-3 py-4 lg:py-0 lg:px-8 space-y-8">
+                            <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-3 py-4 lg:py-0 lg:px-8 space-y-8 gs_reveal">
                                 <p class="divider gray"></p>
-                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4">
+                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4 gap-x-8">
                                     <div class="col-span-1">
                                         <p class="iykra-sg text-2xl pr-14">Showcase Inovasi AI</p>
                                     </div>
@@ -141,7 +141,7 @@
                                     </div>
                                 </div>
                                 <p class="divider gray"></p>
-                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4">
+                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4 gap-x-8">
                                     <div class="col-span-1">
                                         <p class="iykra-sg text-2xl">Koneksi dengan Talenta AI</p>
                                     </div>
@@ -150,7 +150,7 @@
                                     </div>
                                 </div>
                                 <p class="divider gray"></p>
-                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4">
+                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4 gap-x-8">
                                     <div class="col-span-1">
                                         <p class="iykra-sg text-2xl">Panel Diskusi dengan Pakar</p>
                                     </div>
@@ -159,7 +159,7 @@
                                     </div>
                                 </div>
                                 <p class="divider gray"></p>
-                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4">
+                                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-4 gap-x-8">
                                     <div class="col-span-1">
                                         <p class="iykra-sg text-2xl">Networking & Kolaborasi</p>
                                     </div>
@@ -180,7 +180,7 @@
             <div class="relative px-8 lg:px-14">
                 <div class="">
                     <div class="w-full relative">
-                        <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-4 space-y-4 md:space-y-0 lg:space-y-0">
+                        <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-4 space-y-4 md:space-y-0 lg:space-y-0 gs_reveal">
                             <div class="flex flex-col justify-between w-full space-y-4 sm:col-span-1 md:col-span-1 lg:col-span-2 bg-footer text-white p-8 rounded-xl h-full shadow-lg">
                                 <div class="space-y-4">
                                     <p class="iykra-sg text-2xl">Untuk Perusahaan yang Ingin Berkolaborasi</p>
@@ -193,9 +193,14 @@
                                     <p class="iykra-gs text-lg">Menjadi sponsor atau mitra dalam ekosistem AI yang berkembang pesat.</p>
                                     <p class="divider white"></p>
                                     <p class="iykra-gs text-lg pb-4">Tertarik berkolaborasi? Unduh proposal lengkap di sini</p>
-                                    <a href="https://bit.ly/proposalberandai" target="_blank" class="btn-primary text-gs text-base rounded-full px-8 py-3">Unduh Proposal</a>
+                                    <div class="space-y-4 lg:space-y-0 lg:space-x-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+                                        <a href="https://bit.ly/proposalberandai" target="_blank" class="btn-primary-outline text-gs text-base rounded-full px-4 py-3">Unduh Proposal</a>
+                                        <a href="https://api.whatsapp.com/send/?phone=6281298952818&text=Hai+IYKRA%2C%20saya%20tertarik%20ingin%20tahu%20lebih%20lanjut+mengenai+program+-+program+yang+tersedia.+Bisa+bantu+informasinya?&type=phone_number&app_absent=0" target="_blank" class="btn-primary text-gs text-base rounded-full px-4 py-3">
+                                            <i class="fa fa-whatsapp"></i>
+                                            Hubungi Kami
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="iykra-gs text-lg pt-4">Atau hubungi kami langsung di WhatsApp <b class="iykra-sg">+62 811 8174 558</b> untuk diskusi lebih lanjut.</p>
                             </div>
                             <div class="content-start w-full space-y-4 sm:col-span-1 md:col-span-1 lg:col-span-2 space-y-4 bg-spectra-yellow p-8 rounded-xl shadow-lg">
                                 <p class="iykra-sg text-2xl">Untuk Talenta AI & Fresh Graduate</p>
@@ -209,7 +214,7 @@
                                 <p class="iykra-gs text-lg">Mentorship dari praktisi industri dan AI experts.</p>
                                 <p class="divider black"></p>
                                 <p class="iykra-gs text-lg pb-4">Tertarik bergabung dengan AI Engineering Fellowship?</p>
-                                <a href="https://fellowship-registration.iykra.com" target="_blank" class="btn-black text-gs text-base rounded-full px-8 py-3">Daftar Sekarang</a>
+                                <a href="https://fellowship-registration.iykra.com" target="_blank" class="btn-black text-gs text-base rounded-full px-4 py-3">Daftar Sekarang</a>
                             </div>
                             <div class="content-start w-full space-y-4 sm:col-span-1 md:col-span-1 lg:col-span-2 space-y-4 bg-gray p-8 rounded-xl shadow-lg">
                                 <p class="iykra-sg text-2xl">Untuk Audience yang Ingin Hadir di BerandAI</p>

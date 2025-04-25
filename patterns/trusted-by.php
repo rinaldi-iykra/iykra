@@ -13,12 +13,12 @@
 
 ?>
 
-<div class="container mx-auto">
-    <div class="pt-14 px-8 lg:px-8 ">
+<div class="mx-auto lg:px-14">
+    <div class="pt-14 px-8 lg:px-8 lg:px-14">
         <div class="flex-1 space-y-4">
             <div class="grid gap-4">
                 <div class=" content-center space-y-2">
-                    <h3 class="iykra-sg text-4xl text-black gs_reveal gs_reveal_fromLeft">Dipercayai Oleh</h3>
+                    <h3 class="iykra-sg text-3xl lg:text-4xl text-black gs_reveal gs_reveal_fromLeft">Dipercayai Oleh</h3>
                 </div>
             </div>
         </div>

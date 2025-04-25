@@ -730,6 +730,11 @@
 			"title": "IYKRA About"
 		},
 		{
+			"name": "iykra-career",
+			"postTypes": ["page"],
+			"title": "IYKRA Career"
+		},
+		{
 			"name": "iykra-home",
 			"postTypes": ["page"],
 			"title": "IYKRA Home"
@@ -774,6 +779,11 @@
 			"name": "iykra-ai-fellowship",
 			"postTypes": ["page"],
 			"title": "IYKRA AI Fellowship"
+		},
+		{
+			"name": "iykra-public-training",
+			"postTypes": ["page"],
+			"title": "IYKRA Public Training"
 		},
 
 		{

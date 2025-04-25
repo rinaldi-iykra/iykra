@@ -18,9 +18,9 @@
         <div class="pt-14">
             <div class="flex-1">
                 <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 px-8 lg:px-14">
-                    <div class=" content-center space-y-2 pb-8 gs_reveal gs_reveal_fromLeft">
-                        <h3 class="primary text-black">Gallery</h3>
-                        <p class="primary regular text-black">See our fun class and services</p>
+                    <div class=" content-center space-y-2 pb-8 gs_reveal gs_reveal_fromLeft px-0 lg:px-14">
+                        <h3 class="iykra-sg text-3xl lg:text-4xl text-black">Gallery</h3>
+                        <p class="iykra-gs text-xl lg:text-2xl text-black">See our fun class and services</p>
                     </div>
 
                     <div class="flex items-end lg:justify-end justify-center lg:relative">

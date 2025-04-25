@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
     --black: #000;
     --semiblack: #1E1E1E;
     --gray: #DFE2E7;
+    --gray2: #F1F2F2;
+    --gray3: #BBBBBB;
 
     --divider-gray: #D9D9D9;
     --disabled: #C6C6C6;
@@ -155,6 +157,9 @@ footer {
 .bg-6 {
 	background-color: var(--background-6);
 }
+.bg-faq {
+	background-color: var(--gray2);
+}
 
 .bg-navbar {
     background: rgba(255, 255, 255, .8);
@@ -210,6 +215,15 @@ footer {
 .bg-individual-gradient-2 {
     background: linear-gradient(102.93deg, #FDF4CB 21.28%, #FFD671 100%);
 }
+
+@media (min-width: 600px) {
+    .bg-fellowship-timeline {
+        background-image: url('./assets/images/fellowship/bg-fellowship-timeline.png');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
 .image-decorator {
     position: absolute;
     background: var(--background-decorator);
@@ -397,6 +411,20 @@ a.navbar-link:hover {
     border: 1px solid var(--harvest-gold);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+.btn-primary-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--spectra-yellow);
+    transition: box-shadow 0.3s ease;
+}
+.btn-primary-outline:hover {
+    color: var(--white);
+    background-color: var(--spectra-yellow);
+    border: 1px solid var(--harvest-gold);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 .btn-berandai {
     background-color: var(--blue-berandai);
     color: var(--black);
@@ -453,6 +481,18 @@ a.navbar-link:hover {
     color: var(--semiblack);
     background-color: var(--white);
     border: 1px solid var(--semiblack);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-semiwhite {
+    background-color: var(--disabled);
+    color: var(--black);
+    border: 1px solid var(--disabled);
+    transition: box-shadow 0.3s ease;
+}
+.btn-semiwhite:hover {
+    color: var(--black);
+    background-color: var(--spectra-yellow);
+    border: 1px solid var(--harvest-gold);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -752,6 +792,42 @@ a.navbar-link:hover {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
+.content-testimoni-fellowship {
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+.swiper-slide.swiper-slide-active > div > div > div.content-testimoni-fellowship {
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0s ease 0s;
+}
+
+
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
 /* SWIPER */
 
 .icon-large {
@@ -961,6 +1037,7 @@ p.divider.white {
 .iykra-implement-card {
     background-color: var(--gray);
     cursor: pointer;
+    min-height: 400px;
 }
 .iykra-implement-card.active {
     background-color: var(--white);
@@ -1018,6 +1095,45 @@ p.divider.white {
 .iykra-border2>div.br-0 {
     border-right: 0px !important;
 }
+
+.iykra-border-fellowship {
+    border: 1px solid var(--blue-ai-fellowship);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-collapse: collapse;
+}
+.iykra-border-fellowship>div:nth-child(odd) {
+    border-right: 1px solid var(--blue-ai-fellowship);
+    border-bottom: 1px solid var(--blue-ai-fellowship);
+}
+.iykra-border-fellowship>div:nth-child(even) {
+    border-right: 1px solid var(--blue-ai-fellowship);
+    border-bottom: 1px solid var(--blue-ai-fellowship);
+}
+.iykra-border-fellowship>div.br-0 {
+    border-right: 0px !important;
+}
+.iykra-fellowsip-card:hover {
+    color: var(--black) !important;
+    background-color: var(--blue-ai-fellowship) !important;
+}
+.iykra-corporate-card:hover {
+    background-color: var(--spectra-yellow) !important;
+}
+
+@media (max-width: 1024px) {
+    .iykra-border-fellowship > div {
+        border-right: none !important;
+    }
+    .iykra-border > div {
+        border-right: none !important;
+    }
+    .iykra-border2 > div {
+        border-right: none !important;
+    }
+}
+
 
 .iykra-main-header {
     font-size: 50px;
@@ -1095,6 +1211,12 @@ p.divider.white {
     background-size: cover;
 }
 
+/* PUBLIC TRAINING */
+.single-banner-text {
+    position: absolute;
+    z-index: 2;
+}
+
 /* TALKSON BANNER */
 .iykra-event-banner-1 {
     background-image: url('./assets/images/event/banner-1.png');
@@ -1124,6 +1246,21 @@ p.divider.white {
 }
 .iykra-event-calendar-4 {
     background-image: url('./assets/images/event/calendar/calendar-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-dot-element {
+    background-image: url('./assets/images/event/dot-element.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-404 {
+    background-image: url('./assets/images/bg-404.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-maintenance {
+    background-image: url('./assets/images/bg-maintenance.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1160,4 +1297,70 @@ p.divider.white {
 }
 .syllabus-card.active {
     display: block;
+}
+.syllabus-mini {
+    cursor: pointer;
+}
+.syllabus-mini:hover {
+    font-weight: bold;
+}
+.syllabus-mini.active {
+    font-weight: bold;
+}
+.syllabus-mini.active>div.syllabus-no {
+    background-color: var(--blue-ai-fellowship);
+}
+.syllabus-mini>div.syllabus-no {
+    background-color: var(--gray);
+}
+
+
+.transform-rotate-90 {
+    min-width: inherit;
+    transition: transform 0.1s ease;
+}
+.transform-rotate-90.active {
+    min-width: 300px;
+    margin-left: 50%;
+    transform-origin: left;
+    transform: rotate(90deg);
+    display: block;
+    margin-right: 50%;
+    transition: transform 0.1s ease;
+}
+
+/* Timeline */
+
+.fellowship-timeline-stage {
+    width: fit-content;
+    padding: 5px 15px;
+    border: 1px solid var(--gray3);
+    border-radius: 50px;
+    margin-top: 1rem;
+    position: relative;
+}
+.fellowship-timeline {
+    border-right: 1px solid var(--gray3);
+    position: relative;
+}
+.fellowship-timeline.end {
+    border-right: 1px solid var(--gray3);
+    position: relative;
+}
+.fellowship-timeline::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: var(--background-footer);
+    position: absolute;
+    top: 1.5rem;
+    border-radius: 50%;
+    right: -8px;
+}
+
+
+
+.ignore-is-layout-flow :where(div) {
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
 }

@@ -19,19 +19,19 @@
         <div class="mx-auto sm:px-0 lg:px-14">
             <div class="flex isolate px-8 py-8 lg:px-14 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-                    <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
-                        <h1 class="iykra-sg text-6xl text-black">IYKRA’s Event</h1>
+                    <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left gs_reveal gs_reveal_fromLeft">
+                        <h1 class="iykra-sg text-5xl lg:text-6xl text-black">IYKRA’s Event</h1>
                     </div>
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-1">
 
                     </div>
-                    <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
-                        <p class="iykra-gs text-2xl text-black pb-4">Eksplorasi ragam acara eksklusif IYKRA yang dirancang untuk menghubungkan industry leaders, experts teknologi, dan talenta terbaik dalam industri AI.</p>
+                    <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left gs_reveal">
+                        <p class="iykra-gs text-xl lg:text-2xl text-black pb-4">Eksplorasi ragam acara eksklusif IYKRA yang dirancang untuk menghubungkan industry leaders, experts teknologi, dan talenta terbaik dalam industri AI.</p>
                     </div>
                 </div>
             </div>
             <div class="flex isolate px-8 lg:px-14">
-                <div class="swiper default-carousel-event swiper-container">
+                <div class="swiper default-carousel-event swiper-container rounded-xl">
                     <div class="swiper-wrapper rounded-xl">
                         <div class="swiper-slide rounded-xl" style="height: auto;">
                             <div class="h-full space-y-4 iykra-event-banner-1 rounded-xl">
@@ -39,11 +39,11 @@
                                     <div class="col-span-1 justify-center text-white">
                                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/talkson-logo.png" class="px-4"/>
                                         <div class="mx-14 space-y-4 pb-14">
-                                            <p class="iykra-gs text-xl">
+                                            <p class="iykra-gs text-lg lg:text-xl">
                                                 Seri panel diskusi yang membahas tren bisnis, strategi bisnis dan penerapan teknologi AI bersama praktisi industri.
                                             </p>
                                             <p  class="iykra-gs text-sm py-4">Dapatkan insight praktis untuk solusi bisnis Anda!</p>
-                                            <a href="talkson" class="btn-primary text-gs text-base rounded-full px-14 py-3 mt-4">Daftar Sekarang</a>
+                                            <a href="talkson" class="btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3 mt-4">Daftar Sekarang</a>
                                             <p  class="iykra-gs text-sm">*Jadwal lengkap tersedia di bawah</p>
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@
                                                 Event Interaktif Industri AI yang Menghubungkan Pemimpin Bisnis, Expert AI, dan Talenta Terbaik.
                                             </p>
                                             <p  class="iykra-gs text-sm py-4">Jelajahi pameran solusi AI, diskusi bersama pakar industri, dan peluang networking strategis di BerandAI IYKRA.</p>
-                                            <a href="berandai" class="btn-berandai text-gs text-base rounded-full px-14 py-3">Lihat Event</a>
+                                            <a href="berandai" class="btn-berandai text-gs text-sm lg:text-base rounded-full px-8 py-3">Lihat Event</a>
                                             <p  class="iykra-gs text-sm">*Jadwal lengkap tersedia di bawah</p>
                                         </div>
                                     </div>
@@ -80,14 +80,14 @@
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-                            <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <p class="iykra-sg text-4xl">Kilas Balik Event IYKRA</p>
+                            <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-2 gs_reveal gs_reveal_fromLeft">
+                                <p class="iykra-sg text-3xl lg:text-4xl">Kilas Balik Event IYKRA</p>
                             </div>
                             <div class="content-start w-full sm:col-span-1 md:col-span-1 lg:col-span-1 py-4 lg:py-0 lg:px-8">
                                 
                             </div>
-                            <div class="content-start w-full space-y-4 sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <p class="iykra-gs text-2xl">Jelajahi kembali insights menarik, diskusi strategis, serta kolaborasi nyata yang tercipta dari event IYKRA sebelumnya.</p>
+                            <div class="content-start w-full space-y-4 sm:col-span-1 md:col-span-2 lg:col-span-2 gs_reveal">
+                                <p class="iykra-gs text-xl lg:text-2xl">Jelajahi kembali insights menarik, diskusi strategis, serta kolaborasi nyata yang tercipta dari event IYKRA sebelumnya.</p>
                             </div>
                         </div>
                     </div>
@@ -97,16 +97,16 @@
     </div>
     <div class="bg-white pt-14">
         <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-4 md:px-6 lg:px-6">
+            <div class="relative px-4 md:px-6 lg:px-10">
                 <div class="">
                     <div class="w-full relative hidden sm:hidden md:block lg:block">
-                        <div class="swiper default-carousel-eventHistory swiper-container" style="width:100% !important;">
+                        <div class="swiper default-carousel-eventHistory swiper-container rounded-xl" style="width:100% !important;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide rounded-xl px-4">
                                     <div class="grid sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-x-8 gap-y-8">
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-1.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-1.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">BerandAI Fashion bersama Bella Clarissa (Goomah) dan Tommy Teja (Zalmon Fabric & Aico) di Neha Hub, Cilandak. 15 Februari 2025</p>
@@ -114,7 +114,7 @@
                                         </div>
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-2.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-2.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Presentasi siswa AI Fellowship Engineering batch 1 di BerandAI Fashion, Neha Hub. 15 Februari 2025</p>
@@ -122,7 +122,7 @@
                                         </div>
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-3.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-3.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Panel diskusi AI dalam 3 Babak, kolaborasi bersama IME FT UI. On frame: I Ketut Widya (GM FMC & Enabler CVM, Telkomsel), Ardya Dipta (Head of Data Science, Kalbe). 26 Oktober 2024 di Fakultas Teknik UI, Depok</p>
@@ -134,7 +134,7 @@
                                     <div class="grid sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-x-8 gap-y-8">
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-4.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-4.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Talent IYKRA, Zalma (ex Data Engineer di BRI & BNI) mengajar di program Elektrifikasi UI by Ikatan Mahasiswa Teknik Elektro (IME) FTUI. 5 Oktober 2024</p>
@@ -142,7 +142,7 @@
                                         </div>
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-5.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-5.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Melina Anggita, Enterprise Lead IYKRA sebagai dewan juri di Compfest UI, Fasilkom UI</p>
@@ -150,7 +150,7 @@
                                         </div>
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-6.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-6.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">BJIR "Bersama Jalani Indahnya Ramadan" (Buka Puasa bersama tim IYKRA) di Hotel Des Indes, Jakarta Pusat. 27 Maret 2024</p>
@@ -162,7 +162,7 @@
                                     <div class="grid sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-x-8 gap-y-8">
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-7.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-7.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Talent IYKRA, Mentari (ex Data Enginner di BNI) menjadi pembicara di UMN Tech Festival</p>
@@ -170,7 +170,7 @@
                                         </div>
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-8.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-8.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Graduation Data Fellowship 11: "Fast-Track Data Engineering Program" di kantor IYKRA</p>
@@ -178,7 +178,7 @@
                                         </div>
                                         <div class="content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-4">
                                             <div class="content-center">
-                                                <img class="rounded-xl h-60 w-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-9.png"/>
+                                                <img class="rounded-xl h-60 w-full object-cover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/event/history/history-9.png"/>
                                             </div>
                                             <div class="space-y-2">
                                                 <p class="iykra-gs text-lg">Kelas Hybrid Data Fellowship: "Fast-Track Data Engineering" di kantor IYKRA, Juli 2023</p>
@@ -191,7 +191,7 @@
                     </div>
 
                     <div class="w-full relative sm:block md:hidden lg:hidden">
-                        <div class="swiper default-carousel-eventHistory swiper-container" style="width:100% !important;">
+                        <div class="swiper default-carousel-eventHistory swiper-container rounded-xl" style="width:100% !important;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide rounded-xl px-4">
                                     <div>
@@ -314,9 +314,9 @@
             <div class="relative px-8 lg:px-14">
                 <div class="">
                     <div class="w-full relative space-y-14">
-                        <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                        <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gs_reveal">
                             <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <p class="iykra-sg text-4xl">Kalender Event IYKRA</p>
+                                <p class="iykra-sg text-3xl lg:text-4xl">Kalender Event IYKRA</p>
                             </div>
                             <div class="content-start w-full sm:col-span-1 md:col-span-1 lg:col-span-1 py-4 lg:py-0 lg:px-8">
                                 
@@ -337,9 +337,9 @@
                     <div class="w-full relative space-y-8">
                         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-x-8">
                             <div id="month-container" class="grid grid-cols-3 gap-x-8 text-center">
-                                <button class="outline-none w-full btn-semiblack text-gs text-base rounded-xl py-3 transition-all duration-300 opacity-100 translate-y-0">Prev</button>
-                                <button class="outline-none w-full btn-primary text-gs text-base rounded-xl py-3 transition-all duration-300 opacity-100 translate-y-0">Current</button>
-                                <button class="outline-none w-full btn-semiblack text-gs text-base rounded-xl py-3 transition-all duration-300 opacity-100 translate-y-0">Next</button>
+                                <button class="outline-none w-full btn-semiblack text-gs text-sm lg:text-base rounded-xl py-3 transition-all duration-300 opacity-100 translate-y-0">Prev</button>
+                                <button class="outline-none w-full btn-primary text-gs text-sm lg:text-base rounded-xl py-3 transition-all duration-300 opacity-100 translate-y-0">Current</button>
+                                <button class="outline-none w-full btn-semiblack text-gs text-sm lg:text-base rounded-xl py-3 transition-all duration-300 opacity-100 translate-y-0">Next</button>
                             </div>
                             <div class="hidden md:block lg:block relative">
                                 <input type="text" id="search-event" name="search-event" value="" placeholder="Cari disini ..." 
@@ -361,197 +361,10 @@
                             </div>
                         </div>
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-8">
-                            <!-- TALKSON -->
-                            <div data-month="4" name="talks on 2" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-1 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/talkson-logo.png" style="width:50%;"/>
-                                            <p class="iykra-sg text-bold text-6xl text-white my-auto pt-3"><b>2</b></p>
-                                        </div>
-                                        <p class="iykra-gs text-lg text-white mx-8 text-center">Revolusi Industri Ugal-ugalan:  Transformasi Bisnis dengan AI Agents</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a href="https://bit.ly/talksonai2" target="_blank" class="btn-primary text-gs text-sm rounded-full px-8 py-3">Daftar Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="6" name="talks on 3" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-1 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/talkson-logo.png" style="width:50%;"/>
-                                            <p class="iykra-sg text-bold text-6xl text-white my-auto pt-3"><b>3</b></p>
-                                        </div>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="8" name="talks on 4" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-1 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/talkson-logo.png" style="width:50%;"/>
-                                            <p class="iykra-sg text-bold text-6xl text-white my-auto pt-3"><b>4</b></p>
-                                        </div>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="10" name="talks on 5" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-1 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/talkson-logo.png" style="width:50%;"/>
-                                            <p class="iykra-sg text-bold text-6xl text-white my-auto pt-3"><b>5</b></p>
-                                        </div>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="12" name="talks on 6" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-1 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/talkson-logo.png" style="width:50%;"/>
-                                            <p class="iykra-sg text-bold text-6xl text-white my-auto pt-3"><b>6</b></p>
-                                        </div>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FELLOWSHIP -->
-                            <div data-month="3-4" name="ai fellowship batch 2" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-2 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/ai-fellowship-logo.png" style="width:80%;"/>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 2</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a href="https://fellowship-registration.iykra.com" target="_blank" class="btn-primary text-gs text-sm rounded-full px-8 py-3">Daftar Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="6-7" name="ai fellowship batch 3" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-2 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/ai-fellowship-logo.png" style="width:80%;"/>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 3</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a href="https://fellowship-registration.iykra.com" target="_blank" class="btn-primary text-gs text-sm rounded-full px-8 py-3">Daftar Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="10" name="ai fellowship batch 3" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-2 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/ai-fellowship-logo.png" style="width:80%;"/>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 3</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a href="https://fellowship-registration.iykra.com" target="_blank" class="btn-primary text-gs text-sm rounded-full px-8 py-3">Daftar Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- PUBLIC TRAINING -->
-                            <div data-month="5" name="public training batch 1" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-3 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <p class="iykra-sg text-3xl text-white py-6">Public Traning</p>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 1</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="7" name="public training batch 2" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-3 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <p class="iykra-sg text-3xl text-white py-6">Public Traning</p>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 2</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="10" name="public training batch 3" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-3 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <p class="iykra-sg text-3xl text-white py-6">Public Traning</p>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 3</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- AI MBA -->
-                            <div data-month="5" name="ai business camp batch 1" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-4 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <p class="iykra-sg text-3xl text-white py-6">AI Business Camp</p>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 1</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="8" name="ai business camp batch 2" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-4 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <p class="iykra-sg text-3xl text-white py-6">AI Business Camp</p>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 2</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-month="11" name="ai business camp batch 3" class="event-card opacity-100 translate-y-0 scale-100 transition-all duration-300 ease-in-out content-start w-full rounded-xl sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <div class="content-center flex flex-col justify-between w-full rounded-xl h-80 iykra-event-calendar-4 space-y-4 align-center py-14">
-                                    <div>
-                                        <div class="flex justify-center">
-                                            <p class="iykra-sg text-3xl text-white py-6">AI Business Camp</p>
-                                        </div>
-                                        <p class="iykra-gs text-xl text-white mx-8 text-center">Batch 3</p>
-                                    </div>
-                                    <div class="w-full text-center">
-                                        <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <!-- wp:pattern {"slug":"iykra/talkson-card"} /-->
+                            <!-- wp:pattern {"slug":"iykra/fellowship-card"} /-->
+                            <!-- wp:pattern {"slug":"iykra/public-training-card"} /-->
+                            <!-- wp:pattern {"slug":"iykra/ai-business-camp-card"} /-->
                         </div>
                     </div>
                 </div>
@@ -566,7 +379,7 @@
                     <div class="w-full relative">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
                             <div class="content-start w-full sm:col-span-1 md:col-span-2 lg:col-span-2">
-                                <p class="iykra-sg text-4xl">Publikasi Media</p>
+                                <p class="iykra-sg text-3xl lg:text-4xl">Publikasi Media</p>
                             </div>
                             <div class="content-start w-full sm:col-span-1 md:col-span-1 lg:col-span-1">
                                 

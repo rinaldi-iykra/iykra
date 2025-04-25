@@ -307,6 +307,7 @@ function iykra_register_block_patterns() {
 
     $pattern_home_file = get_template_directory() . '/patterns/home.php';
     $pattern_about_file = get_template_directory() . '/patterns/about.php';
+    $pattern_career_file = get_template_directory() . '/patterns/career.php';
 
     if ( file_exists( $pattern_home_file ) ) {
 		ob_start();
@@ -334,6 +335,21 @@ function iykra_register_block_patterns() {
                 'title'       => __( 'About Page', 'iykra' ),
                 'description' => __( 'The main about page layout.', 'iykra' ),
                 'content'     => $pattern_about_content,
+            )
+        );
+    }
+
+	if ( file_exists( $pattern_career_file ) ) {
+		ob_start();
+        include $pattern_career_file;
+        $pattern_career_content = ob_get_clean();
+
+        register_block_pattern(
+            'iykra/career-page',
+            array(
+                'title'       => __( 'Career Page', 'iykra' ),
+                'description' => __( 'The main career page layout.', 'iykra' ),
+                'content'     => $pattern_career_content,
             )
         );
     }
@@ -418,6 +434,7 @@ function iykra_register_block_patterns() {
 
     $pattern_data_fellowship_file = get_template_directory() . '/patterns/data-fellowship.php';
     $pattern_ai_fellowship_file = get_template_directory() . '/patterns/ai-fellowship.php';
+	$pattern_public_training_file = get_template_directory() . '/patterns/public-training.php';
 	
 	if ( file_exists( $pattern_data_fellowship_file ) ) {
 		ob_start();
@@ -447,5 +464,81 @@ function iykra_register_block_patterns() {
             )
         );
     }
+	if ( file_exists( $pattern_public_training_file ) ) {
+		ob_start();
+        include $pattern_public_training_file;
+        $pattern_public_training_content = ob_get_clean();
+
+        register_block_pattern(
+            'iykra/public-training-page',
+            array(
+                'title'       => __( 'Public Training Page', 'iykra' ),
+                'description' => __( 'The main public training page layout.', 'iykra' ),
+                'content'     => $pattern_public_training_content,
+            )
+        );
+    }
+
+	// Components
+	$pattern_public_training_card_file = get_template_directory() . '/patterns/components/public-training-card.php';
+	if ( file_exists( $pattern_public_training_card_file ) ) {
+		ob_start();
+		include $pattern_public_training_card_file;
+		$pattern_public_training_card_content = ob_get_clean();
+
+		register_block_pattern(
+			'iykra/public-training-card',
+			array(
+				'title'       => __( 'Public Training Card', 'iykra' ),
+				'description' => __( 'The public training card component.', 'iykra' ),
+				'content'     => $pattern_public_training_card_content,
+			)
+		);
+	}
+	$pattern_fellowship_card_file = get_template_directory() . '/patterns/components/fellowship-card.php';
+	if ( file_exists( $pattern_fellowship_card_file ) ) {
+		ob_start();
+		include $pattern_fellowship_card_file;
+		$pattern_fellowship_card_content = ob_get_clean();
+
+		register_block_pattern(
+			'iykra/fellowship-card',
+			array(
+				'title'       => __( 'Fellowship Card', 'iykra' ),
+				'description' => __( 'The fellowship card component.', 'iykra' ),
+				'content'     => $pattern_fellowship_card_content,
+			)
+		);
+	}
+	$pattern_talkson_card_file = get_template_directory() . '/patterns/components/talkson-card.php';
+	if ( file_exists( $pattern_talkson_card_file ) ) {
+		ob_start();
+		include $pattern_talkson_card_file;
+		$pattern_talkson_card_content = ob_get_clean();
+
+		register_block_pattern(
+			'iykra/talkson-card',
+			array(
+				'title'       => __( 'TalksON Card', 'iykra' ),
+				'description' => __( 'The TalksON card component.', 'iykra' ),
+				'content'     => $pattern_talkson_card_content,
+			)
+		);
+	}
+	$pattern_ai_business_camp_file = get_template_directory() . '/patterns/components/ai-business-camp-card.php';
+	if ( file_exists( $pattern_ai_business_camp_file ) ) {
+		ob_start();
+		include $pattern_ai_business_camp_file;
+		$pattern_ai_business_camp_content = ob_get_clean();
+
+		register_block_pattern(
+			'iykra/ai-business-camp-card',
+			array(
+				'title'       => __( 'AI Business Camp Card', 'iykra' ),
+				'description' => __( 'The AI Business Camp card component.', 'iykra' ),
+				'content'     => $pattern_ai_business_camp_content,
+			)
+		);
+	}
 }
 add_action( 'init', 'iykra_register_block_patterns' );

@@ -12,7 +12,7 @@
  */
 
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+
 <button id="pull-up" class="focus:outline-none text-primary w-14 h-14 rounded-full bg-3 hover:bg-spectra-yellow hover:text-white shadow hide">
 	<i class="fa fa-arrow-up icon-large"></i>
 </button>
@@ -23,7 +23,7 @@
 	/>
 </div>
 
-<div class="wp-block-group bg-footer" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)">
+<div class="wp-block-group bg-footer px-4 lg:px-14" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)">
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:site-logo /-->
@@ -42,21 +42,20 @@
 				<div class="space-y-4 p-4">
 					<p class="iykra-sg text-lg"><b>Layanan</b></p>
 					<div class="grid space-y-2">
-						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/about">Public Training</a>
-						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/career">Corporate Training</a>
-						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/blog">Manage Service</a>
+						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/corporate-training">Corporate Training</a>
+						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/managed-service">Manage Service</a>
 					</div>
 				</div>
 				<div class="space-y-4 p-4">
 					<p class="iykra-sg text-lg"><b>Produk</b></p>
-					<div class="grid space-y-2">
-						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/data-fellowship">Insight</a>
-						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/data-fellowship">Training</a>
+					<div class="grid space-y-2 pb-4">
+						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/public-training">Public Training</a>
+						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/ai-engineering-fellowship">AI Engineering Fellowship</a>
 					</div>
 
-					<p class="iykra-sg text-lg pt-2"><b>Event</b></p>
+					<a href="/events" class="iykra-sg text-lg footer-link focus:outline-none"><b>Event</b></a>
 					<div class="grid space-y-2">
-						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/events/talkson">TalksON</a></p>
+						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/events/talkson">TalksON AI</a></p>
 						<a class="footer-link iykra-gs text-lg focus:outline-none" href="/events/berandai">BerandAI</a></p>
 					</div>
 				</div>
@@ -72,4 +71,3 @@
 	</div>
 	<!-- /wp:group -->
 </div>
-<!-- /wp:group -->

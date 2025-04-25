@@ -146,6 +146,40 @@ $(document).ready(function() {
         }
     });
 
+    
+    var swiperCenteredFellowship = new Swiper(".centered-slide-carousel-fellowship", {
+        centeredSlides: true,
+        loop: true,
+        slideToClickedSlide: true,
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 120
+            },
+            1028: {
+                slidesPerView: 2,
+                spaceBetween: 80
+            },
+            990: {
+                slidesPerView: 1,
+                spaceBetween: 40
+            }
+        }
+    });
+
+    var swiperCenteredUseCase= new Swiper(".centered-slide-carousel-use-case", {
+        centeredSlides: true,
+        loop: true,
+        slideToClickedSlide: true,
+        mousewheel: true,
+        direction: 'horizontal',
+        spaceBetween: 0,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
     let navbarPosition = "absolute";
     const adminBar = document.getElementById('wpadminbar');
     let adminBarTop = 0;
@@ -358,6 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const implementCards = document.querySelectorAll('.iykra-implement-card');
     const implementContents = document.querySelectorAll('.iykra-implement-content');
     const implementStatus = document.querySelectorAll('.iykra-implement-status');
+    const implementTitles = document.querySelectorAll('.transform-rotate-90');
 
     implementCards.forEach((button, index) => {
         button.addEventListener('click', () => {
@@ -367,6 +402,9 @@ document.addEventListener('DOMContentLoaded', () => {
             implementStatus.forEach(status => {
                 status.classList.remove('active');
             });
+            implementTitles.forEach(title => {
+                title.classList.add('active');
+            });
             implementContents.forEach(content => {
                 content.classList.add('hidden');
             });
@@ -374,6 +412,9 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('active', 'col-span-3');
             if (implementStatus[index]) {
                 implementStatus[index].classList.add('active');
+            }
+            if (implementTitles[index]) {
+                implementTitles[index].classList.remove('active');
             }
             if (implementContents[index]) {
                 implementContents[index].classList.remove('hidden');
@@ -467,21 +508,92 @@ function filterEvents() {
 
 // Syllabus AI Fellowship
 document.addEventListener("DOMContentLoaded", function () {
-    const syllabusItems = document.querySelectorAll(".syllabus");
+    const syllabusItems = document.querySelectorAll(".syllabus, .syllabus-mini");
     const syllabusCards = document.querySelectorAll(".syllabus-card");
+
+    const handleClick = (item) => {
+        syllabusItems.forEach(syl => syl.classList.remove("active"));
+        syllabusCards.forEach(card => card.classList.remove("active"));
+        item.classList.add("active");
+        
+        const targetId = item.id;
+        const targetCard = document.querySelector(`[data-target='${targetId}']`);
+        
+        if (targetCard) {
+            targetCard.classList.add("active");
+        }
+
+        if (item.classList.contains("syllabus")) {
+            const miniItem = document.querySelector(`.syllabus-mini#${item.id}`);
+            if (miniItem) {
+                miniItem.classList.add("active");
+            }
+        }
+
+        if (item.classList.contains("syllabus-mini")) {
+            const fullItem = document.querySelector(`.syllabus#${item.id.replace('-mini', '')}`);
+            if (fullItem) {
+                fullItem.classList.add("active");
+            }
+        }
+    };
 
     syllabusItems.forEach(item => {
         item.addEventListener("click", function () {
-            syllabusItems.forEach(syl => syl.classList.remove("active"));
-            this.classList.add("active");
-            syllabusCards.forEach(card => card.classList.remove("active"));
+            handleClick(this);
+        });
+    });
+});
 
-            const targetId = this.id;
-            const targetCard = document.querySelector(`[data-target='${targetId}']`);
+
+
+// FAQ
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+    
+    toggleIcons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            const targetId = icon.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
             
-            if (targetCard) {
-                targetCard.classList.add("active");
+            targetContent.classList.toggle('hidden');
+            
+            if (targetContent.classList.contains('hidden')) {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            } else {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
             }
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    var swiper = new Swiper('.mySwiper', {
+        direction: 'vertical',  // Vertical scrolling
+        loop: true,             // Enable looping
+        spaceBetween: 30,       // Space between slides
+        mousewheel: true,       // Enable mouse wheel scroll
+        pagination: {
+            el: '.swiper-pagination',  // Pagination element
+            clickable: true,            // Allow pagination click
+        },
+        on: {
+            slideChangeTransitionStart: function() {
+                const activeSlide = document.querySelector('.swiper-slide-active .timeline-content');
+                // Add animation on slide change
+                activeSlide.style.transform = 'scale(1.05)';
+            },
+            slideChangeTransitionEnd: function() {
+                const activeSlide = document.querySelector('.swiper-slide-active .timeline-content');
+                // Reset scale after transition
+                activeSlide.style.transform = 'scale(1)';
+            }
+        }
+    });
+
+  });
+  
