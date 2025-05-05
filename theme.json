@@ -735,6 +735,11 @@
 			"title": "IYKRA Career"
 		},
 		{
+			"name": "iykra-career-apply",
+			"postTypes": ["page"],
+			"title": "IYKRA Career Apply"
+		},
+		{
 			"name": "iykra-home",
 			"postTypes": ["page"],
 			"title": "IYKRA Home"
@@ -784,6 +789,18 @@
 			"name": "iykra-public-training",
 			"postTypes": ["page"],
 			"title": "IYKRA Public Training"
+		},
+
+
+		{
+			"name": "iykra-privacy-policy",
+			"postTypes": ["page"],
+			"title": "IYKRA Privacy Policy"
+		},
+		{
+			"name": "iykra-refund-return",
+			"postTypes": ["page"],
+			"title": "IYKRA Refund Return"
 		},
 
 		{

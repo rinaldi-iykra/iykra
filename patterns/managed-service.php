@@ -23,7 +23,7 @@
                     <div class="content-center space-y-2 text-left lg:pr-14 space-y-4 gs_reveal gs_reveal_fromLeft">
                         <h1 class="iykra-sg text-5xl lg:text-6xl text-white">Membangun Talenta Data Berstandar Internasional</h1>
                         <p class="iykra-gs text-white pb-4 text-xl lg:text-2xl">Dapatkan talenta terbaik melalui seleksi komprehensif, dengan kendali penuh atas proses onboarding dan perekrutan.</p>
-                        <button class="text-sm lg:text-base btn-primary text-black rounded-full px-14 py-3 iykra-gs">Jadwalkan Konsultasi</button>
+                        <a href="https://contact.iykra.com" target="_blank" class="text-sm lg:text-base btn-primary text-black rounded-full px-14 py-3 iykra-gs">Jadwalkan Konsultasi</a>
                     </div>
                 </div>
             </div>
@@ -44,14 +44,14 @@
                                     <p class="divider gray" style="margin-bottom:0px !important;"></p>
                                     <button 
                                         data-target="tab-data" 
-                                        class="btn-tab iykra-gs text-xl lg:text-2xl py-2 text-left px-4 outline-none"
+                                        class="btn-tab iykra-gs text-xl lg:text-2xl py-3 text-left px-4 outline-none"
                                     >
                                         Data Role
                                     </button>
                                     <p class="divider gray" style="margin-bottom:0px !important;"></p>
                                     <button 
                                         data-target="tab-tech"
-                                        class="btn-tab iykra-gs text-xl lg:text-2xl py-2 text-left px-4 outline-none"
+                                        class="btn-tab iykra-gs text-xl lg:text-2xl py-3 text-left px-4 outline-none"
                                     >
                                         Tech Role
                                     </button>
@@ -120,9 +120,9 @@
                                     <div class="content-center text-center md:text-left lg:text-left">
                                         <h3 class="iykra-sg text-2xl lg:text-3xl">Belum Yakin dengan Kebutuhan Anda?</h3>
                                     </div>
-                                    <div class="content-center text-center md:text-left lg:text-left">
-                                        <button class="btn-primary text-black iykra-gs text-sm lg:text-base rounded-full px-8 py-3 hidden lg:block">Konsultasikan Sekarang</button>
-                                        <button class="btn-primary text-black iykra-gs text-sm lg:text-base rounded-full px-8 py-3 block lg:hidden mx-auto">Konsultasikan</button>
+                                    <div class="content-center text-center md:text-left lg:text-center">
+                                        <a href="https://contact.iykra.com" target="_blank" class="btn-primary text-black iykra-gs text-sm lg:text-base rounded-full px-8 py-3 hidden lg:block" style="width: fit-content;">Konsultasikan Sekarang</a>
+                                        <a href="https://contact.iykra.com" target="_blank" class="btn-primary text-black iykra-gs text-sm lg:text-base rounded-full px-8 py-3 block lg:hidden mx-auto">Konsultasikan</a>
                                     </div>
                                 </div>
                             </div>

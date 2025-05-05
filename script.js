@@ -16,6 +16,16 @@ $(document).ready(function() {
         }
 	});
 
+    document.querySelectorAll('.btnLink').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const link = this.getAttribute('data-link');
+            if (link) {
+                window.location.href = link;
+            }
+        });
+    });
+
     const gsReveal = $(".gs_reveal");
     if (gsReveal.length > 0) {
         function animateFrom(elem, direction) {
@@ -298,6 +308,144 @@ $(document).ready(function() {
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (document.getElementById('submitJobBtn')) {
+        document.getElementById('submitJobBtn').addEventListener('click', async function(e)  {
+            e.preventDefault(); // Mencegah submit form default
+        
+            // Ambil semua field
+            const id = document.getElementById('id').value;
+            const positionName = document.getElementById('positionName').value;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const number = document.getElementById('number').value.trim();
+            const education = document.querySelector('input[name="education"]:checked')?.value;
+            const company = document.getElementById('company').value.trim();
+            const occupation = document.getElementById('occupation').value.trim();
+            const linkedin = document.getElementById('linkedin').value.trim();
+            const portfolio = document.getElementById('portfolio').value.trim();
+            const currentSalary = document.getElementById('currentSalary').value.trim();
+            const expectedSalary = document.getElementById('expectedSalary').value.trim();
+            const selectedFile = document.getElementById('selectedFile').files[0];
+            const agreePrivacy = document.getElementById('agreePrivacy').checked;
+        
+            // Validasi sederhana (bisa diperluas lagi)
+            let isValid = true;
+        
+            if (!name) {
+                document.getElementById('err-name').textContent = "Nama wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-name').textContent = "";
+            }
+            if (!email) {
+                document.getElementById('err-email').textContent = "Email wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-email').textContent = "";
+            }
+            if (!number) {
+                document.getElementById('err-number').textContent = "Nomor telepon wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-number').textContent = "";
+            }
+            if (!education) {
+                document.getElementById('err-education').textContent = "Pilih pendidikan terakhir Anda";
+                isValid = false;
+            } else {
+                document.getElementById('err-education').textContent = "";
+            }
+            if (!company) {
+                document.getElementById('err-company').textContent = "Perusahaan sekarang / terakhir wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-company').textContent = "";
+            }
+            if (!occupation) {
+                document.getElementById('err-occupation').textContent = "Posisi di Perusahaan wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-occupation').textContent = "";
+            }
+            if (!currentSalary) {
+                document.getElementById('err-currentSalary').textContent = "Gaji saat ini wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-currentSalary').textContent = "";
+            }
+            if (!expectedSalary) {
+                document.getElementById('err-expectedSalary').textContent = "Gaji yang diharapkan wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-expectedSalary').textContent = "";
+            }
+            if (!selectedFile) {
+                document.getElementById('err-selectedFile').textContent = "File CV wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-selectedFile').textContent = "";
+            }
+        
+            if (!isValid) {
+                alert('Ada beberapa data yang masih kosong, silahkan isi terlebih dahulu.');
+                return;
+            }
+
+            if (!agreePrivacy) {
+                alert('Anda harus menyetujui Kebijakan Privasi terlebih dahulu.');
+                isValid = false;
+                return;
+            }
+        
+            // Siapkan data form
+            const formData = new FormData();
+            formData.append('id', id);
+            formData.append('position', positionName);
+            formData.append('fullname', name);
+            formData.append('email', email);
+            formData.append('phone', number);
+            formData.append('education', education);
+            formData.append('current_company', company);
+            formData.append('current_position', occupation);
+            formData.append('current_salary', currentSalary);
+            formData.append('expected_salary', expectedSalary);
+            formData.append('submission_date', new Date().toISOString());
+            if (selectedFile) {
+                formData.append('cv', selectedFile);
+            }
+
+            if (!portfolio) {
+                formData.append('github', "N/A");
+            } else {
+                formData.append('github', portfolio);
+            }
+            if (!linkedin) {
+                formData.append('linkedin', "N/A");
+            } else {
+                formData.append('linkedin', linkedin);
+            }
+
+            try {
+                const response = await fetch('https://hr.iykra.com/api/applicant/create-applicant', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+        
+                if (response.status === 200) {
+                    alert('Lamaran berhasil dikirim!');
+                } else {
+                    alert(data.message || 'Terjadi kesalahan saat mengirim lamaran.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Gagal mengirim lamaran. Silakan coba lagi.');
+            }
         });
     }
 });
@@ -595,5 +743,159 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-  });
-  
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a.custom-scroll[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+    
+        if (targetElement) {
+            targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start' // Scroll ke atas elemen
+            });
+        }
+        });
+    });
+});
+
+// Career
+function openJobModal(el) {
+    const title = el.getAttribute("data-title");
+    const type = el.getAttribute("data-type");
+    const jobId = el.getAttribute("id");
+    const jobdesc = JSON.parse(el.getAttribute("data-jobdesc") || "[]");
+    const requirements = JSON.parse(el.getAttribute("data-requirements") || "[]");
+
+    document.getElementById("modalTitle").textContent = title;
+    document.getElementById("modalType").textContent = type;
+    document.getElementById("modalId").textContent = jobId;
+
+    const jobdescList = document.getElementById("modalJobdesc");
+    jobdescList.innerHTML = "";
+    jobdesc.forEach(text => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        jobdescList.appendChild(li);
+    });
+
+    const reqList = document.getElementById("modalRequirements");
+    reqList.innerHTML = "";
+    requirements.forEach(text => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        reqList.appendChild(li);
+    });
+
+    document.getElementById("jobModal").classList.remove("hidden");
+}
+
+function openJobDetail(el) {
+    const jobdesc = JSON.parse(el.getAttribute("data-jobdesc") || "[]");
+    const requirements = JSON.parse(el.getAttribute("data-requirements") || "[]");
+
+    const jobdescList = document.getElementById("detailJobDesc");
+    jobdescList.innerHTML = "";
+    jobdesc.forEach(text => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        jobdescList.appendChild(li);
+    });
+
+    const reqList = document.getElementById("detailJobRequirements");
+    reqList.innerHTML = "";
+    requirements.forEach(text => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        reqList.appendChild(li);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var isModal = document.getElementById("closeModal");
+    if (isModal) {
+        document.getElementById("closeModal").addEventListener("click", () => {
+            document.getElementById("jobModal").classList.add("hidden");
+        });
+    }
+
+    var btnDetailModal = document.getElementById("jobDetailModal");
+    if (btnDetailModal) {
+        document.getElementById("jobDetailModal").addEventListener("click", () => {
+            var jobId = document.getElementById("modalId").textContent;
+            if (jobId) {
+                window.location.href = "/careers/apply/?job_id=" + encodeURIComponent(jobId);
+            } else {
+                console.error("Job ID tidak ditemukan");
+            }
+        });
+    }
+
+    var isCardDetailJob = document.getElementById("cardDetailJob");
+    if (isCardDetailJob) {
+        openJobDetail(isCardDetailJob);
+    }
+
+    const fileInput = document.getElementById('selectedFile');
+    if (fileInput) {
+        const dropArea = document.getElementById('dropArea');
+        const fileTitle = document.getElementById('fileTitle');
+        const fileSubtitle = document.getElementById('fileSubtitle');
+
+        function handleFile(file) {
+            if (!file) {
+                alert('Tidak ada file yang dipilih.');
+                return;
+            }
+
+            if (file.type !== 'application/pdf') {
+                alert('File harus berformat PDF.');
+                fileInput.value = "";
+                return;
+            }
+
+            if (file.size > 5 * 1024 * 1024) {
+                alert('Ukuran file maksimal 5MB.');
+                fileInput.value = "";
+                return;
+            }
+
+            fileTitle.textContent = `CV Anda: ${file.name}`;
+            fileSubtitle.textContent = 'File berhasil dipilih.';
+        }
+
+        fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            handleFile(file);
+        });
+
+        // Drag & Drop Events
+        dropArea.addEventListener('dragover', function(event) {
+            event.preventDefault();
+            dropArea.classList.add('bg-gray-200'); // kasih feedback dragover
+        });
+
+        dropArea.addEventListener('dragleave', function(event) {
+            dropArea.classList.remove('bg-gray-200');
+        });
+
+        dropArea.addEventListener('drop', function(event) {
+            event.preventDefault();
+            dropArea.classList.remove('bg-gray-200');
+            
+            const file = event.dataTransfer.files[0];
+            if (file) {
+                handleFile(file);
+
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(file);
+                fileInput.files = dataTransfer.files;
+            }
+        });
+    }
+});

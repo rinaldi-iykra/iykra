@@ -53,8 +53,8 @@
                                 <p class="iykra-sg text-xl lg:text-2xl"><b>Corporate Training</b></p>
                             </div>
                             <div class="content-start w-full space-y-4 sm:col-span-1 md:col-span-1 lg:col-span-2">
-                                <p class="iykra-gs text-base lg:text-lg">Program pelatihan komprehensif untuk perusahaan, dirancang untuk membangun pemahaman dan keterampilan dalam big data serta analitik. Dengan pendekatan konseptual dan praktis, kami membantu perusahaan menguasai strategi berbasis data untuk pertumbuhan bisnis yang lebih cerdas.</p>
-                                <button class="btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Dapatkan Silabus Kami</button>
+                                <p class="iykra-gs text-base lg:text-lg pb-4">Program pelatihan komprehensif untuk perusahaan, dirancang untuk membangun pemahaman dan keterampilan dalam big data serta analitik. Dengan pendekatan konseptual dan praktis, kami membantu perusahaan menguasai strategi berbasis data untuk pertumbuhan bisnis yang lebih cerdas.</p>
+                                <a href="https://contact.iykra.com" target="_blank" class="btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Konsultasikan Sekarang</a>
                             </div>
                         </div>
                         <p class="divider gray"></p>
@@ -69,8 +69,8 @@
                                 <p class="iykra-sg text-xl lg:text-2xl"><b>Project Implementation</b></p>
                             </div>
                             <div class="content-start w-full space-y-4 sm:col-span-1 md:col-span-1 lg:col-span-2">
-                                <p class="iykra-gs text-base lg:text-lg">Menyediakan solusi menyeluruh, dari eksplorasi, pengembangan, hingga penerapan teknologi dan analitik ke dalam operasional bisnis. Dengan pendekatan terintegrasi, kami membantu mendorong transformasi digital yang efektif dan berkelanjutan.</p>
-                                <button class="btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Konsultasikan Sekarang</button>
+                                <p class="iykra-gs text-base lg:text-lg pb-4">Menyediakan solusi menyeluruh, dari eksplorasi, pengembangan, hingga penerapan teknologi dan analitik ke dalam operasional bisnis. Dengan pendekatan terintegrasi, kami membantu mendorong transformasi digital yang efektif dan berkelanjutan.</p>
+                                <a href="/insights" class="btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Lihat Detail</a>
                             </div>
                         </div>
                         <p class="divider gray"></p>

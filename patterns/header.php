@@ -17,13 +17,13 @@
 		<div class="wp-block-group px-8 lg:px-14">
 			<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-				<div class="grid grid-cols-2 lg:grid-cols-5 items-center w-full lg:px-14">
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center w-full lg:px-14">
 					<div class="flex">
 						<a href="/" class="focus:outline-none">
 							<img class="iykra-header-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logos/logo-color-black.png"/>
 						</a>
 					</div>
-					<div class="justify-center lg:flex hidden lg:col-span-3">
+					<div class="justify-center md:flex lg:flex hidden col-span-1 md:col-span-2 lg:col-span-3">
 						<ul class="flex flex-wrap space-x-12">
 							<li>
 								<div class="dropdown">
@@ -60,7 +60,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="flex justify-end lg:flex lg:col-span-2 lg:hidden">
+					<div class="flex justify-end md:hidden lg:flex lg:col-span-2 lg:hidden">
 						<button id="mobile-menu-button" class="iykra-gs text-base focus:outline-none">
 							<i class="fa fa-bars text-xl"></i>
 						</button>
@@ -73,18 +73,18 @@
 					<div class="space-y-2">
 						<p class="w-full text-left iykra-gs text-base font-medium px-4">Services</p>
 						<div class="space-y-2">
-							<a href="/corporate-training" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-2 text-sm focus:outline-none">Corporate Training</a>
-							<a href="/managed-service" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-2 text-sm focus:outline-none">Managed Service</a>
+							<a href="/corporate-training" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-3 text-sm focus:outline-none">Corporate Training</a>
+							<a href="/managed-service" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-3 text-sm focus:outline-none">Managed Service</a>
 						</div>
 
 						<p class="w-full text-left iykra-gs text-base font-medium pt-2 px-4">Training</p>
 						<div class="space-y-2">
-							<a href="/public-training" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-2 text-sm focus:outline-none">Public Training</a>
-							<a href="/ai-engineering-fellowship" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-2 text-sm focus:outline-none">AI Engineering Fellowship</a>
+							<a href="/public-training" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-3 text-sm focus:outline-none">Public Training</a>
+							<a href="/ai-engineering-fellowship" class="w-full rounded btn-menu-navbar block iykra-gs text-base px-8 py-3 text-sm focus:outline-none">AI Engineering Fellowship</a>
 						</div>
-						<a href="/events" class="w-full rounded btn-menu-navbar block iykra-gs text-base font-medium focus:outline-none px-4 py-2">Events</a>
-						<a href="/careers" class="w-full rounded btn-menu-navbar block iykra-gs text-base font-medium focus:outline-none px-4 py-2">Careers</a>
-						<a href="/about" class="w-full rounded btn-menu-navbar block iykra-gs text-base font-medium focus:outline-none px-4 py-2">About Us</a>
+						<a href="/events" class="w-full rounded btn-menu-navbar block iykra-gs text-base font-medium focus:outline-none px-4 py-3">Events</a>
+						<a href="/careers" class="w-full rounded btn-menu-navbar block iykra-gs text-base font-medium focus:outline-none px-4 py-3">Careers</a>
+						<a href="/about" class="w-full rounded btn-menu-navbar block iykra-gs text-base font-medium focus:outline-none px-4 py-3">About Us</a>
 					</div>
 				</div>
 			</div>

@@ -24,7 +24,7 @@
                         <div class="lg:p-14 p-4 content-center space-y-2 gs_reveal gs_reveal_fromLeft">
                             <h1 class="iykra-sg text-5xl lg:text-6xl color-spectra-yellow">Preparing Indonesia’s Future Force</h1>
                             <p class="iykra-gs text-xl lg:text-2xl color-muted pb-4">by consulting and outsourcing data talents</p>
-                            <button class="btn-white iykra-gs text-base rounded px-4 py-2">Find Out More</button>
+                            <a href="https://contact.iykra.com" target="_blank" class="btn-white iykra-gs text-base rounded px-4 py-2">Find Out More</a>
                         </div>
                         <div class="lg:p-14 sm:p-4 flex justify-center lg:justify-end">
                             <div class="flex">
@@ -87,13 +87,13 @@
                             </div>
                             <div class="flex space-x-4">
                                 <div class="space-y-2 pb-8 pl-14 gs_reveal">
-                                    <h3 class="iykra-sg text-3xl lg:text-4xl color-spectra-yellow">Data Fellowship</h3>
-                                    <p class="iykra-gs text-lg lg:text-xl color-muted">Are you ready to challenge yourself to be the best #DataHeroes and get hired as Data Engineer? Click here to find out more about our most awaited bootcamp.</p>
+                                    <h3 class="iykra-sg text-3xl lg:text-4xl color-spectra-yellow">AI Fellowship</h3>
+                                    <p class="iykra-gs text-lg lg:text-xl color-muted">Are you ready to challenge yourself to be the best #AIHeroes and get hired as AI Engineer? Click here to find out more about our most awaited bootcamp.</p>
                                 </div>
                                 <div class="pr-14 flex items-center lg:items-start">
-                                    <button class="btn-primary text-primary rounded w-14 h-14 btn-rotate-45 rounded-full hover:bg-white hover:text-black">
+                                    <a href="/ai-engineering-fellowship" class="btn-primary text-primary rounded w-14 h-14 btn-rotate-45 rounded-full hover:bg-white hover:text-black items-center flex text-center justify-center cursor-pointer">
                                         <i class="fa fa-arrow-right icon-large"></i>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -108,9 +108,9 @@
                                         <p class="iykra-gs text-lg lg:text-xl text-black">Build the whole big data and analytics capability needed by the great talent of an organization through solid fundamental concepts, real data projects.</p>
                                     </div>
                                     <div class="pr-14 flex items-center lg:items-start">
-                                        <button class="btn-white text-primary rounded w-14 h-14 btn-rotate-45 rounded-full hover:text-white hover:bg-black">
+                                        <a href="/corporate-training" class="btn-white text-primary rounded w-14 h-14 btn-rotate-45 rounded-full hover:text-white hover:bg-black items-center flex text-center justify-center cursor-pointer">
                                             <i class="fa fa-arrow-right icon-large"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -123,9 +123,9 @@
                                         <p class="iykra-gs text-lg lg:text-xl text-black">Through this service, we are focused on providing great executing through global standards data talents.</p>
                                     </div>
                                     <div class="pr-14 flex items-center lg:items-start">
-                                        <button class="btn-primary text-primary rounded w-14 h-14 btn-rotate-45 rounded-full hover:bg-white hover:text-black">
+                                        <a href="/managed-service" class="btn-primary text-primary rounded w-14 h-14 btn-rotate-45 rounded-full hover:bg-white hover:text-black items-center flex text-center justify-center cursor-pointer">
                                             <i class="fa fa-arrow-right icon-large"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

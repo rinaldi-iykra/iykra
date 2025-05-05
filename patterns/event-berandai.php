@@ -194,8 +194,8 @@
                                     <p class="divider white"></p>
                                     <p class="iykra-gs text-lg pb-4">Tertarik berkolaborasi? Unduh proposal lengkap di sini</p>
                                     <div class="space-y-4 lg:space-y-0 lg:space-x-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                                        <a href="https://bit.ly/proposalberandai" target="_blank" class="btn-primary-outline text-gs text-base rounded-full px-4 py-3">Unduh Proposal</a>
-                                        <a href="https://api.whatsapp.com/send/?phone=6281298952818&text=Hai+IYKRA%2C%20saya%20tertarik%20ingin%20tahu%20lebih%20lanjut+mengenai+program+-+program+yang+tersedia.+Bisa+bantu+informasinya?&type=phone_number&app_absent=0" target="_blank" class="btn-primary text-gs text-base rounded-full px-4 py-3">
+                                        <a href="https://bit.ly/proposalberandai" target="_blank" class="btn-primary-outline text-gs text-base rounded-full px-4 py-3 text-center">Unduh Proposal</a>
+                                        <a href="https://api.whatsapp.com/send/?phone=6281298952818&text=Hai+IYKRA%2C%20saya%20tertarik%20ingin%20tahu%20lebih%20lanjut+mengenai+program+-+program+yang+tersedia.+Bisa+bantu+informasinya?&type=phone_number&app_absent=0" target="_blank" class="btn-primary text-gs text-base rounded-full px-4 py-3 text-center">
                                             <i class="fa fa-whatsapp"></i>
                                             Hubungi Kami
                                         </a>

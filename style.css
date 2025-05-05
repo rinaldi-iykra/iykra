@@ -1359,8 +1359,24 @@ p.divider.white {
 }
 
 
+.career-card {
+    box-shadow: 1px 0px 20px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.career-card:hover {
+    background-color: var(--spectra-yellow) !important;
+}
 
 .ignore-is-layout-flow :where(div) {
     margin-block-start: 0px !important;
     margin-block-end: 0px !important;
+}
+
+/* .is-layout-flow :where(div) {
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+} */
+
+.iykra-privacy:hover {
+    color: var(--spectra-yellow);
 }

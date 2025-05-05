@@ -9,6 +9,13 @@
  * @since IYKRA 1.0
  */
 
+ add_action('wp_head', function() {
+    $favicon_url = esc_url( get_template_directory_uri() . '/assets/icons/favicon.ico' );
+    echo '<link rel="icon" href="' . $favicon_url . '" type="image/x-icon">';
+    echo '<link rel="shortcut icon" href="' . $favicon_url . '" type="image/x-icon">';
+    echo '<link rel="apple-touch-icon" href="' . esc_url( get_template_directory_uri() . '/assets/icons/apple-touch-icon.png' ) . '">';
+});
+
 // Adds theme support for post formats.
 if ( ! function_exists( 'iykra_post_format_setup' ) ) :
 	/**
@@ -308,6 +315,7 @@ function iykra_register_block_patterns() {
     $pattern_home_file = get_template_directory() . '/patterns/home.php';
     $pattern_about_file = get_template_directory() . '/patterns/about.php';
     $pattern_career_file = get_template_directory() . '/patterns/career.php';
+    $pattern_career_apply_file = get_template_directory() . '/patterns/career-apply.php';
 
     if ( file_exists( $pattern_home_file ) ) {
 		ob_start();
@@ -353,6 +361,20 @@ function iykra_register_block_patterns() {
             )
         );
     }
+	if ( file_exists( $pattern_career_apply_file ) ) {
+		ob_start();
+        include $pattern_career_apply_file;
+        $pattern_career_apply_content = ob_get_clean();
+
+        register_block_pattern(
+            'iykra/career-apply-page',
+            array(
+                'title'       => __( 'Career Apply Page', 'iykra' ),
+                'description' => __( 'The main career apply page layout.', 'iykra' ),
+                'content'     => $pattern_career_apply_content,
+            )
+        );
+	}
 
     $pattern_event_file = get_template_directory() . '/patterns/event.php';
     $pattern_event_talkson_file = get_template_directory() . '/patterns/event-talkson.php';
@@ -479,6 +501,38 @@ function iykra_register_block_patterns() {
         );
     }
 
+    // Privacy policy and return refund
+    $pattern_privacy_policy_file = get_template_directory() . '/patterns/privacy-policy.php';
+    $pattern_refund_return_file = get_template_directory() . '/patterns/refund-return.php';
+	if ( file_exists( $pattern_privacy_policy_file ) ) {
+		ob_start();
+        include $pattern_privacy_policy_file;
+        $pattern_privacy_policy_content = ob_get_clean();
+
+        register_block_pattern(
+            'iykra/privacy-policy-page',
+            array(
+                'title'       => __( 'Privacy Policy Page', 'iykra' ),
+                'description' => __( 'The main privacy policy page layout.', 'iykra' ),
+                'content'     => $pattern_privacy_policy_content,
+            )
+        );
+    }
+    if ( file_exists( $pattern_refund_return_file ) ) {
+		ob_start();
+        include $pattern_refund_return_file;
+        $pattern_refund_return_content = ob_get_clean();
+
+        register_block_pattern(
+            'iykra/refund-return-page',
+            array(
+                'title'       => __( 'Refund Return Page', 'iykra' ),
+                'description' => __( 'The main refund return page layout.', 'iykra' ),
+                'content'     => $pattern_refund_return_content,
+            )
+        );
+    }
+
 	// Components
 	$pattern_public_training_card_file = get_template_directory() . '/patterns/components/public-training-card.php';
 	if ( file_exists( $pattern_public_training_card_file ) ) {
@@ -542,3 +596,102 @@ function iykra_register_block_patterns() {
 	}
 }
 add_action( 'init', 'iykra_register_block_patterns' );
+
+
+function get_jobs_data() {
+    $response = wp_remote_get( 'https://hr.iykra.com/api/vacancies/get-vacancies' );
+    if ( is_wp_error( $response ) ) {
+        return 'API request failed: ' . $response->get_error_message();
+    }
+    
+	$body = wp_remote_retrieve_body($response);
+    $json = json_decode($body, true);
+
+    if (!isset($json['data']) || !is_array($json['data'])) {
+        return [];
+    }
+
+    $jobs = [];
+
+    foreach ($json['data'] as $job) {
+        $requirements = [];
+        if (!empty($job['requirements'][0]['children'])) {
+            foreach ($job['requirements'][0]['children'] as $item) {
+                $text = $item['children'][0]['text'] ?? '';
+                if ($text) {
+                    $requirements[] = $text;
+                }
+            }
+        }
+
+        $jobdesc = [];
+        if (!empty($job['jobdesc'][0]['children'])) {
+            foreach ($job['jobdesc'][0]['children'] as $item) {
+                $text = $item['children'][0]['text'] ?? '';
+                if ($text) {
+                    $jobdesc[] = $text;
+                }
+            }
+        }
+
+        $jobs[] = [
+            'id' => $job['_id'] ?? '',
+            'position' => $job['position'] ?? '',
+            'type' => $job['type'] ?? '',
+            'requirements' => $requirements,
+            'jobdesc' => $jobdesc,
+        ];
+    }
+    return $jobs;
+}
+add_shortcode( 'jobs_display', 'get_jobs_data' );
+
+function get_jobs_data_specific($jobId) {
+	$response = wp_remote_get( 'https://hr.iykra.com/api/vacancies/get-vacancies' );
+    if ( is_wp_error( $response ) ) {
+        return 'API request failed: ' . $response->get_error_message();
+    }
+    
+	$body = wp_remote_retrieve_body($response);
+    $json = json_decode($body, true);
+
+    if (!isset($json['data']) || !is_array($json['data'])) {
+        return [];
+    }
+
+    $jobs = [];
+
+    foreach ($json['data'] as $job) {
+        $requirements = [];
+        if (!empty($job['requirements'][0]['children'])) {
+            foreach ($job['requirements'][0]['children'] as $item) {
+                $text = $item['children'][0]['text'] ?? '';
+                if ($text) {
+                    $requirements[] = $text;
+                }
+            }
+        }
+
+        $jobdesc = [];
+        if (!empty($job['jobdesc'][0]['children'])) {
+            foreach ($job['jobdesc'][0]['children'] as $item) {
+                $text = $item['children'][0]['text'] ?? '';
+                if ($text) {
+                    $jobdesc[] = $text;
+                }
+            }
+        }
+
+		if ($job['_id'] == $jobId) {
+			$jobs[] = [
+				'id' => $job['_id'] ?? '',
+				'position' => $job['position'] ?? '',
+				'type' => $job['type'] ?? '',
+				'requirements' => $requirements,
+				'jobdesc' => $jobdesc,
+			];
+		}
+    }
+    return $jobs;
+}
+add_shortcode( 'specific_jobs_display', 'get_jobs_data_specific' );

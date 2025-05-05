@@ -28,7 +28,7 @@
                                     <h1 class="iykra-sg text-5xl lg:text-6xl text-white">Tingkatkan Skill AI & Analytics Anda Secara Praktikal</h1>
                                     <p class="iykra-gs text-white pb-8 text-xl lg:text-2xl">Kuasai penggunaan AI untuk transformasi bisnis secara langsung dan aplikatif</p>
                                     <a href="#registration" 
-                                        class="text-sm lg:text-base btn-primary text-black rounded-full px-14 py-3 iykra-gs">Registrasi</a>
+                                        class="custom-scroll text-sm lg:text-base btn-primary text-black rounded-full px-14 py-3 iykra-gs">Registrasi</a>
                                 </div>
                                 <p class="iykra-gs text-base text-white"></p>
                             </div>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="content-start">
                                 <p class="iykra-gs text-lg lg:text-xl pb-8 gs_reveal gs_reveal_fromRight">Public Training IYKRA adalah program pelatihan intensif selama 2 hari ini dirancang khusus untuk para profesional dari berbagai divisi yang ingin memperdalam keahlian praktis dalam penggunaan alat AI dan analitik untuk mendukung pengambilan keputusan bisnis yang efektif. Melalui pelatihan luring interaktif dengan studi kasus nyata, peserta tidak hanya memperoleh pemahaman teoritis, tetapi juga keterampilan teknis nyata yang siap diaplikasikan langsung untuk mengoptimalkan kinerja bisnis melalui analytics, AI tools, serta framework bisnis berbasis data.</p>
-                                <!-- <a href="https://fellowship-registration.iykra.com" target="_blank" class="text-sm lg:text-base btn-primary-outline text-black rounded-full px-8 py-3 iykra-gs">Unduh Booklet</a> -->
+                                <a href="https://drive.google.com/drive/u/0/folders/1lBG0mqbSIb7f4TPCxEzP93OdfxtvFTfh" target="_blank" class="text-sm lg:text-base btn-primary-outline text-black rounded-full px-8 py-3 iykra-gs">Unduh Booklet</a>
                             </div>
                             <p class="divider gray sm:col-span-1 md:col-span-1 lg:col-span-2 pb-4"></p>
                             <div class="content-start">
@@ -72,7 +72,7 @@
                             </div>
                             <div class="content-start">
                                 <p class="iykra-gs text-lg lg:text-xl pb-8 gs_reveal gs_reveal_fromRight">Program ini terbuka untuk peserta dari berbagai level dan latar belakang, termasuk divisi non-IT. Untuk memaksimalkan relevansi materi, kami telah menyusun jadwal batch berdasarkan fungsi bisnis tertentu.</p>
-                                <a href="#registration" class="text-sm lg:text-base btn-primary text-black rounded-full px-8 py-3 iykra-gs">Registrasi</a>
+                                <a href="#registration" class="custom-scroll text-sm lg:text-base btn-primary text-black rounded-full px-8 py-3 iykra-gs">Registrasi</a>
                             </div>
                         </div>
                     </div>
@@ -259,19 +259,19 @@
             <div class="relative px-8 lg:px-14">
                 <div>
                     <div class="w-full relative space-y-8">
-                        <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 space-y-8">
-                            <div class="content-start space-y-2 gs_reveal">
+                        <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 space-y-8">
+                            <div class="col-span-1 content-start space-y-2 gs_reveal">
                                 <p class="iykra-sg text-3xl lg:text-4xl pt-0 lg:pt-8">Investasi di Public</p>
                                 <p class="iykra-sg text-3xl lg:text-4xl">Training IYKRA</p>
                             </div>
-                            <div class="content-start gs_reveal gs_reveal_fromRight">
+                            <div class="col-span-1 lg:col-span-2 content-start gs_reveal gs_reveal_fromRight">
                                 <div class="w-full rounded-xl shadow-xl bg-footer p-8 lg:p-14 text-center">
                                     <div class="space-y-4 flex flex-col justify-between">
                                         <p class="iykra-sg text-xl lg:text-2xl">2 Hari Pelatihan Offline (full day)</p>
                                         <p class="iykra-sg text-3xl lg:text-4xl">Rp 3.000.000*</p>
                                         <p class="iykra-gs text-base lg:text-lg">*exclude VAT</p>
                                         <div class="space-y-4 lg:space-y-0 lg:space-x-4 flex flex-col lg:flex-row mx-auto">
-                                            <a href="#registration" class="btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Registrasi</a>
+                                            <a href="#registration" class="custom-scroll btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Registrasi</a>
                                             <a href="https://api.whatsapp.com/send/?phone=6281298952818&text=Hai+IYKRA%2C%20saya%20tertarik%20ingin%20tahu%20lebih%20lanjut+mengenai+program+-+program+yang+tersedia.+Bisa+bantu+informasinya?&type=phone_number&app_absent=0" 
                                                 target="_blank" class="btn-primary-outline text-gs text-sm lg:text-base rounded-full px-4 py-3">
                                                 <i class="fa fa-whatsapp"></i>
@@ -288,7 +288,7 @@
         </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-white pt-8">
         <div class="mx-auto sm:px-0 lg:px-14 pb-14">
             <div class="px-8 lg:px-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
