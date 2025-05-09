@@ -17,7 +17,7 @@
 <main>
 
     <div class="bg-white">
-        <div class="relative isolate px-8 py-8 lg:px-14 lg:py-14">
+        <div class="relative isolate px-8 lg:px-0 py-8 lg:py-14 container mx-auto">
             <div class="px-0 lg:px-14">
                 <div class="flex-1 space-y-4 bg-radial-gradient-primary">
                     <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -59,7 +59,7 @@
     </div>
 
     <div class="bg-4 m-0" id="what-we-do">
-        <div class="relative px-8 lg:px-14 pt-14">
+        <div class="relative container mx-auto px-8 lg:px-0 pt-14">
             <div class="px-0 lg:px-14">
                 <div class="flex-1 space-y-4">
                     <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div class="relative px-0 lg:px-8 lg:px-14">
+        <div class="relative container mx-auto px-8 lg:px-0">
             <div class="px-0 lg:px-14">
                 <div class="flex-1 space-y-4">
                     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -137,7 +137,7 @@
     </div>
 
     <div class="bg-4 m-0" id="testimonial">
-        <div class="relative px-8 lg:px-14 pb-14">
+        <div class="relative container mx-auto px-8 lg:px-0 pb-14">
             <div class="pt-14 px-0 lg:px-14">
                 <div class="flex-1 space-y-4">
                     <div class="grid gap-4">
@@ -238,8 +238,8 @@
     </div>
 
     <div class="bg-white m-0" id="as-seen-on">
-        <div class="relative px-0 lg:px-14">
-            <div class="pt-14 px-8 lg:px-14 ">
+        <div class="relative container mx-auto px-8 lg:px-0">
+            <div class="pt-14 px-0 lg:px-14 ">
                 <div class="flex-1 space-y-4">
                     <div class="grid gap-4">
                         <div class=" content-center space-y-2">

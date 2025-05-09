@@ -1,20 +1,22 @@
 $(document).ready(function() {
 
-    document.getElementById('mobile-menu-button').addEventListener('click', () => {
-        const button = document.getElementById('mobile-menu-button');
-        button.classList.toggle('active');
-        const icon = button.querySelector('i');
-		const menu = document.getElementById('mobile-menu');
-		menu.classList.toggle('hidden');
+    if (document.getElementById('mobile-menu-button')) {
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            const button = document.getElementById('mobile-menu-button');
+            button.classList.toggle('active');
+            const icon = button.querySelector('i');
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
 
-        if (icon.classList.contains('fa-bars')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-	});
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
 
     document.querySelectorAll('.btnLink').forEach(function(button) {
         button.addEventListener('click', function(e) {
@@ -208,77 +210,80 @@ $(document).ready(function() {
 
     function onScrollNavbar() {
 		const navbar = document.querySelector("nav");
-		const currentScrollPosition = supportPageOffset
-		? window.pageYOffset
-		: document.documentElement.scrollTop;
-		if (currentScrollPosition <= 0) {
-			if (navbarPosition !== "absolute") {
-				changedPosition = true;
-			}
-			else {
-				changedPosition = false;
-			}
-			navbarPosition = "absolute";
-			navbarTop = 0 + adminBarTop;
-			lastScrollPosition = 0;
-		}
-		else {
-			if (currentScrollPosition > lastScrollPosition) {
-				if (navbarPosition !== "absolute") {
-					changedPosition = true;
-				}
-				else {
-					changedPosition = false;
-				}
-				navbarPosition = "absolute";
-				let {
-					top, height }
-				= navbar.getBoundingClientRect();
-				if (top < -height) {
-					top = -height;
-				}
-				navbarTop = currentScrollPosition + top + adminBarTop;
-			}
-			else if (currentScrollPosition < lastScrollPosition) {
-				const {
-					top }
-				= navbar.getBoundingClientRect();
-				if (top >= 0) {
-					navbarTop = 0 + adminBarTop;
-					if (navbarPosition !== "fixed") {
-						changedPosition = true;
-					}
-					else {
-						changedPosition = false;
-					}
-					navbarPosition = "fixed";
-				} else {
-					navbarPosition = "fixed";
-				}
-			}
-			lastScrollPosition = currentScrollPosition;
-
-            // Setup button navigation group
-            if (btnNavGroup) {
-                const navbarHeight = navbar.offsetHeight;
-                let btnNavGroupTop = 0;
-                if (navbarTop === 0) {
-                    btnNavGroupTop = navbarHeight + adminBarTop;
+        if (navbar) {
+            const currentScrollPosition = supportPageOffset
+            ? window.pageYOffset
+            : document.documentElement.scrollTop;
+            if (currentScrollPosition <= 0) {
+                if (navbarPosition !== "absolute") {
+                    changedPosition = true;
                 }
-                
-                if (currentScrollPosition + navbarHeight >= btnNavGroupOffsetTop) {
-                    btnNavGroup.style.position = "fixed";
-                } else {
-                    btnNavGroup.style.position = "static";
+                else {
+                    changedPosition = false;
                 }
-                btnNavGroup.style.top = `${btnNavGroupTop}px`; // Position it below the navbar
-                btnNavGroup.style.width = "100%";
+                navbarPosition = "absolute";
+                navbarTop = 0 + adminBarTop;
+                lastScrollPosition = 0;
             }
+            else {
+                if (currentScrollPosition > lastScrollPosition) {
+                    if (navbarPosition !== "absolute") {
+                        changedPosition = true;
+                    }
+                    else {
+                        changedPosition = false;
+                    }
+                    navbarPosition = "absolute";
+                    let {
+                        top, height }
+                    = navbar.getBoundingClientRect();
+                    if (top < -height) {
+                        top = -height;
+                    }
+                    navbarTop = currentScrollPosition + top + adminBarTop;
+                }
+                else if (currentScrollPosition < lastScrollPosition) {
+                    const {
+                        top }
+                    = navbar.getBoundingClientRect();
+                    if (top >= 0) {
+                        navbarTop = 0 + adminBarTop;
+                        if (navbarPosition !== "fixed") {
+                            changedPosition = true;
+                        }
+                        else {
+                            changedPosition = false;
+                        }
+                        navbarPosition = "fixed";
+                    } else {
+                        navbarPosition = "fixed";
+                    }
+                }
+                lastScrollPosition = currentScrollPosition;
 
-		}
-        
-		// navbar.style = `width: 100%; position: ${navbarPosition}; top: ${navbarTop}px; transition: ${changedPosition ? "none" : "200ms linear"}`;
-		navbar.style = `width: 100%; position: ${navbarPosition}; top: ${adminBarTop}px;`;
+                // Setup button navigation group
+                if (btnNavGroup) {
+                    const navbarHeight = navbar.offsetHeight;
+                    let btnNavGroupTop = 0;
+                    if (navbarTop === 0) {
+                        btnNavGroupTop = navbarHeight + adminBarTop;
+                    }
+                    
+                    if (currentScrollPosition + navbarHeight >= btnNavGroupOffsetTop) {
+                        btnNavGroup.style.position = "fixed";
+                    } else {
+                        btnNavGroup.style.position = "static";
+                    }
+                    btnNavGroup.style.top = `${btnNavGroupTop}px`; // Position it below the navbar
+                    btnNavGroup.style.width = "100%";
+                }
+
+            }
+            
+            // navbar.style = `width: 100%; position: ${navbarPosition}; top: ${navbarTop}px; transition: ${changedPosition ? "none" : "200ms linear"}`;
+            navbar.style = `width: 100%; position: ${navbarPosition}; top: ${adminBarTop}px;`;
+        }
+		
 
 
 	}

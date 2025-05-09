@@ -23,12 +23,12 @@
 	/>
 </div>
 
-<div class="wp-block-group bg-footer px-4 lg:px-14" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)">
+<div class="wp-block-group bg-footer" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)">
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:site-logo /-->
 		<!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
-		<div class="wp-block-group alignfull">
+		<div class="wp-block-group alignfull container mx-auto px-4 lg:px-0">
 			<div class="grid sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-4 lg:px-14">
 				<div class="space-y-4 p-4 lg:pl-0 md:col-span-2 lg:col-span-2">
 					<img style="width:100px;"

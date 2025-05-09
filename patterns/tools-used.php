@@ -13,8 +13,8 @@
 
 ?>
 
-<div class="mx-auto px-0 lg:px-14">
-    <div class="pt-14 px-8 lg:px-14">
+<div class="container mx-auto px-8 lg:px-14">
+    <div class="pt-14">
         <div class="flex-1 space-y-4">
             <div class="grid gap-4">
                 <div class="content-center space-y-2">

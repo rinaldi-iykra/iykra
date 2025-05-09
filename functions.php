@@ -695,3 +695,14 @@ function get_jobs_data_specific($jobId) {
     return $jobs;
 }
 add_shortcode( 'specific_jobs_display', 'get_jobs_data_specific' );
+
+// Woocommerce
+// add_filter( 'template_include', function( $template ) {
+//     if ( is_singular( 'product' ) ) {
+//         $new_template = locate_template( array( 'templates/single-product.php' ) );
+//         if ( ! empty( $new_template ) ) {
+//             return $new_template;
+//         }
+//     }
+//     return $template;
+// });

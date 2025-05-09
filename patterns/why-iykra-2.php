@@ -14,7 +14,7 @@
 ?>
 
 <div class="bg-white m-0">
-    <div class="relative">
+    <div class="relative container mx-auto px-8 lg:px-14">
         <div class="">
             <div class="w-full relative">
                 <div class="">

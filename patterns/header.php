@@ -14,7 +14,7 @@
 ?>
 <!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 	<nav class="fixed z-10 w-full shadow bg-navbar">
-		<div class="wp-block-group px-8 lg:px-14">
+		<div class="wp-block-group px-8 lg:px-0 container mx-auto">
 			<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center w-full lg:px-14">

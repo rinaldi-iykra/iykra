@@ -17,8 +17,8 @@
 <main>
 
     <div class="bg-ai-fellowship-1">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="h-screen flex isolate px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="h-screen flex isolate py-8 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     <div class="flex flex-col justify-between ">
                         <p></p>
@@ -27,7 +27,8 @@
                             <h1 class="iykra-sg text-5xl lg:text-6xl text-white">AI Engineering Fellowship</h1>
                             <h3 class="iykra-gs text-4xl lg:text-5xl text-white">Batch 2</h3>
                             <p class="iykra-gs text-white pb-8 text-xl lg:text-2xl">Empowering Your Future with Advance AI Skills.</p>
-                            <a href="https://fellowship-registration.iykra.com" target="_blank" class="text-sm lg:text-base btn-ai-fellowship text-black rounded-full px-14 py-3 iykra-gs">Registrasi Sekarang</a>
+                            <!-- <a href="https://fellowship-registration.iykra.com" target="_blank" class="text-sm lg:text-base btn-ai-fellowship text-black rounded-full px-14 py-3 iykra-gs">Registrasi Sekarang</a> -->
+                            <a href="https://fellowship-registration.iykra.com" target="_blank" class="text-sm lg:text-base btn-disabled text-black rounded-full px-14 py-3 iykra-gs">Registrasi Sekarang</a>
                         </div>
                         <p class="iykra-gs text-sm lg:text-base text-white">Pendaftaran dibuka 17 Maret - 22 April, 2025</p>
                     </div>
@@ -37,8 +38,8 @@
     </div>
 
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="flex isolate px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="flex isolate py-8 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-3xl lg:text-4xl text-black gs_reveal gs_reveal_fromLeft">Program Overview</h1>
@@ -58,8 +59,8 @@
     </div>
 
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-3xl lg:text-4xl text-black gs_reveal gs_reveal_fromLeft">Curriculum highlights</h1>
@@ -198,10 +199,10 @@
     </div>
 
     <div class="bg-footer m-0">
-        <div class="relative">
+        <div class="relative container mx-auto px-8 lg:px-14">
             <div class="">
-                <div class="w-full relative lg:px-14">
-                    <h1 class="iykra-sg text-3xl text-4xl px-8 lg:px-14 py-14 gs_reveal gs_reveal_fromLeft">Mengapa Memilih<br/>AI Engineering Fellowship?</h1>
+                <div class="w-full relative">
+                    <h1 class="iykra-sg text-3xl text-4xl py-14 gs_reveal gs_reveal_fromLeft">Mengapa Memilih<br/>AI Engineering Fellowship?</h1>
                 </div>
                 <div class="w-full relative">
                     <div class="">
@@ -242,10 +243,10 @@
     </div>
 
     <div class="bg-white">
-        <div class="mx-auto py-14">
+        <div class="container mx-auto px-8 lg:px-14 py-14">
             <div class="">
-                <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-14">
-                    <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left px-0 lg:px-14">
+                <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-3xl lg:text-4xl text-black gs_reveal gs_reveal_fromLeft">Proses Perekrutan</h1>
                     </div>
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
@@ -260,7 +261,7 @@
                             <ul class="fellowship-timeline-section text-black">
                                 <!-- <li role="presentation" class="active grid grid-cols-3 h-full bg-fellowship-timeline lg:h-40"> -->
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-base fellowship-timeline-stage">Tahap 1</h3>
                                         </div>
@@ -276,7 +277,7 @@
                                 </li>
                                 
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 2</h3>
                                         </div>
@@ -291,7 +292,7 @@
                                     <div class="hidden lg:block col-span-1"></div>
                                 </li>
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 3</h3>
                                         </div>
@@ -306,7 +307,7 @@
                                     <div class="hidden lg:block col-span-1"></div>
                                 </li>
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 4</h3>
                                         </div>
@@ -321,7 +322,7 @@
                                     <div class="hidden lg:block col-span-1"></div>
                                 </li>
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 5</h3>
                                         </div>
@@ -336,7 +337,7 @@
                                     <div class="hidden lg:block col-span-1"></div>
                                 </li>
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 6</h3>
                                         </div>
@@ -351,7 +352,7 @@
                                     <div class="hidden lg:block col-span-1"></div>
                                 </li>
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 7</h3>
                                         </div>
@@ -366,7 +367,7 @@
                                     <div class="hidden lg:block col-span-1"></div>
                                 </li>
                                 <li role="presentation" class="active grid grid-cols-3 h-full">
-                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2 px-14 lg:px-28">
+                                    <div class="focus:outline-none grid grid-cols-5 col-span-3 lg:col-span-2">
                                         <div class="fellowship-timeline col-span-2 lg:col-span-1 end">
                                             <h3 class="nav-timeline-counter iykra-sg tex-xl fellowship-timeline-stage">Tahap 8</h3>
                                         </div>
@@ -393,11 +394,11 @@
     <div class="bg-footer m-0">
         <div class="relative">
             <div class="">
-                <div class="w-full relative lg:px-14">
-                    <h1 class="iykra-sg text-3xl lg:text-4xl px-8 lg:px-14 py-14 gs_reveal gs_reveal_fromLeft">Prasyarat</h1>
+                <div class="w-full relative container mx-auto px-8 lg:px-14">
+                    <h1 class="iykra-sg text-3xl lg:text-4xl py-14 gs_reveal gs_reveal_fromLeft">Prasyarat</h1>
                 </div>
-                <div class="w-full relative px-8 lg:px-14 pb-14">
-                    <div class="px-0 lg:px-14">
+                <div class="w-full relative container mx-auto px-8 lg:px-14 pb-14">
+                    <div class="">
                         <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-12 gap-x-4 gap-y-4 lg:gap-x-8 lg:gap-y-8">
                             
                             <div class="grid grid-cols-10 rounded-xl bg-white sm:col-span-1 md:col-span-1 lg:col-span-6">
@@ -462,8 +463,8 @@
         <div class="relative">
             <div class="pt-14">
                 <div class="flex-1">
-                    <div class="grid gap-4 grid-cols-1 lg:grid-cols-1 px-8 lg:px-14">
-                        <div class="content-center space-y-2 pb-14 gs_reveal gs_reveal_fromLeft px-0 lg:px-14">
+                    <div class="grid gap-4 grid-cols-1 lg:grid-cols-1 container mx-auto px-8 lg:px-14">
+                        <div class="content-center space-y-2 pb-14 gs_reveal gs_reveal_fromLeft">
                             <h3 class="iykra-sg text-3xl lg:text-4xl text-black">Testimoni dari Alumni Program Fellowship</h3>
                         </div>
                     </div>
@@ -575,8 +576,8 @@
     </div>
     
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14 py-14">
-            <div class="px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14 py-14">
+            <div class="">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-3xl lg:text-4xl text-black gs_reveal gs_reveal_fromLeft">Frequently Asked Question</h1>

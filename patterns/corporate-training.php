@@ -16,8 +16,8 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}}} -->
 <main>
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="flex isolate px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="flex isolate py-8 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
                     <div class="sm:col-span-1 md:col-span-2 lg:col-span-3 content-start text-left gs_reveal gs_reveal_fromLeft">
                         <h1 class="iykra-sg text-5xl lg:text-6xl text-black">Solusi Pelatihan Data<br class="hidden md:block lg:block"/> untuk Membangun<br class="hidden md:block lg:block"/> Keunggulan Bisnis</h1>
@@ -37,8 +37,8 @@
     </div>
     
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <p class="divider gray"></p>
@@ -81,8 +81,8 @@
     </div>
     
     <div class="bg-white" id="section-dot">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="py-8 lg:py-14">
                 <div class="swiper default-carousel swiper-container rounded-xl">
                     <div class="swiper-wrapper rounded-xl">
                         <div class="swiper-slide rounded-xl" style="height: auto;">
@@ -175,7 +175,7 @@
     </div>
 
     <div class="bg-white hidden md:block lg:block">
-        <div class="mx-auto sm:px-0 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-0">
             <div class="pt-4 px-14 space-y-2 text-left gs_reveal">
                 <h3 class="iykra-sg text-3xl lg:text-4xl text-black">Implementasi Solusi<br/>di Industri</h3>
             </div>
@@ -532,6 +532,7 @@
     </div>
 
     <!-- wp:pattern {"slug":"iykra/why-iykra-page"} /-->
+     
     <div class="bg-white m-0">
         <div class="relative">
             <!-- wp:pattern {"slug":"iykra/trusted-by-page"} /-->

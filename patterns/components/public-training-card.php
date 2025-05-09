@@ -18,10 +18,10 @@
         <div>
             <p class="iykra-sg text-sm lg:text-base text-white text-center">Public Traning</p>
             <p class="iykra-sg text-2xl lg:text-3xl text-white py-6 text-center px-4">Using AI to Transform Marketing and Sales</p>
-            <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">18 - 19 Juni 2025</p>
+            <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">9 - 10 Juli 2025</p>
         </div>
         <div class="w-full text-center">
-            <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
+            <a href="https://waiting.iykra.com" target="_blank" class="btn-primary-outline text-gs text-sm rounded-full px-8 py-3">Daftar Waiting List</a>
         </div>
     </div>
 </div>
@@ -30,7 +30,7 @@
         <div>
             <p class="iykra-sg text-sm lg:text-base text-white text-center">Public Traning</p>
             <p class="iykra-sg text-2xl lg:text-3xl text-white py-6 text-center px-4">Improving Work Processes with AI</p>
-            <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">13 - 14 Agustus Juli 2025</p>
+            <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">17 - 18 September Juli 2025</p>
         </div>
         <div class="w-full text-center">
             <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>
@@ -42,7 +42,7 @@
         <div>
             <p class="iykra-sg text-sm lg:text-base text-white text-center">Public Traning</p>
             <p class="iykra-sg text-2xl lg:text-3xl text-white py-6 text-center px-4">Automate your Administrative Tasks with AI</p>
-            <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">15 - 16 Oktober 2025</p>
+            <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">12 - 13 November 2025</p>
         </div>
         <div class="w-full text-center">
             <a class="btn-disabled text-gs text-sm rounded-full px-8 py-3">Akan Datang</a>

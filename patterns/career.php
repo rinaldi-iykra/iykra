@@ -16,9 +16,9 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}}} -->
 <main>
     
-<div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="flex px-8 py-8 lg:px-14 lg:py-14">
+    <div class="bg-white">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="flex py-8 lg:py-14">
                 <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left gs_reveal gs_reveal_fromLeft">
                         <h1 class="iykra-sg text-5xl lg:text-6xl text-black">Karir di IYKRA</h1>
@@ -88,8 +88,8 @@
     </div>
 
     <div class="bg-white m-0">
-        <div class="relative px-8 lg:px-14 pb-14">
-            <div class="pt-14 px-0 lg:px-14">
+        <div class="relative pb-14 container mx-auto px-8 lg:px-14">
+            <div class="pt-14">
                 <div class="flex-1 space-y-4">
                     <div class="grid gap-4">
                         <div class=" content-center space-y-2 gs_reveal gs_reveal_fromLeft">
@@ -99,7 +99,7 @@
                 </div>
             </div>
             
-            <div class="pt-8 px-0 lg:px-14">
+            <div class="pt-8">
                 <div class="w-full relative grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div class="h-full space-y-4 bg-spectra-yellow rounded-xl gs_reveal gs_reveal_fromLeft">
                         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full">
@@ -136,8 +136,8 @@
     </div>
 
     <div class="bg-white py-8" id="job">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gs_reveal">
@@ -158,8 +158,8 @@
     </div>
 
     <div class="bg-white pb-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14 pb-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative pb-14">
                 <div class="">
                     <div class="w-full relative space-y-8">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-8">

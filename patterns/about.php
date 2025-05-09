@@ -16,8 +16,8 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}}} -->
 <main>
     <div class="bg-white">
-        <div class="relative isolate px-8 py-8 lg:px-14 lg:py-14">
-            <div class="px-0 lg:px-14">
+        <div class="relative py-8 lg:py-14 container mx-auto px-8 lg:px-14">
+            <div class="">
                 <div class="flex-1 space-y-4 bg-3">
                     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                         <div class="lg:p-14 p-4 content-center space-y-2 gs_reveal gs_reveal_fromLeft lg:my-14">
@@ -37,8 +37,8 @@
         </div>
     </div>
     <div class="bg-white m-0">
-        <div class="relative px-8 lg:px-14 pb-14">
-            <div class="px-0 lg:px-14">
+        <div class="relative container mx-auto px-8 lg:px-14 pb-14">
+            <div class="">
                 <div class="grid grid-cols-4 space-y-4">
                     <div class="lg:col-span-3 col-span-4 lg:pr-4 content-center space-y-2 gs_reveal gs_reveal_fromLeft">
                         <h3 class="iykra-sg text-3xl lg:text-4xl text-black">Who We Are</h3>
@@ -54,8 +54,8 @@
     </div>
 
     <div class="bg-6 m-0">
-        <div class="relative px-8 lg:px-14 py-14">
-            <div class="px-0 lg:px-14">
+        <div class="relative py-14 container mx-auto px-8 lg:px-14">
+            <div class="">
                 <div class="flex-1 space-y-4">
                     <div class="gs_reveal video-wrapper">
                         <iframe 
@@ -69,8 +69,8 @@
             </div>
         </div>
         
-        <div class="relative isolate px-8 lg:px-14 pb-14">
-            <div class="px-0 lg:px-14">
+        <div class="relative container mx-auto px-8 lg:px-14 pb-14">
+            <div class="">
                 <div class="flex-1 space-y-4">
                     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                         <div class="content-center gs_reveal gs_reveal_fromLeft">

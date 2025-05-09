@@ -17,8 +17,8 @@
 <main>
 
     <div class="bg-corporate-1">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="h-screen flex isolate px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="h-screen flex isolate py-8 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     <div class="content-center space-y-2 text-left lg:pr-14 space-y-4 gs_reveal gs_reveal_fromLeft">
                         <h1 class="iykra-sg text-5xl lg:text-6xl text-white">Membangun Talenta Data Berstandar Internasional</h1>
@@ -29,9 +29,10 @@
             </div>
         </div>
     </div>
+
     <div class="bg-footer">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="px-8 lg:px-14 flex">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class=" flex">
                 <div class="py-14 w-full content-center">
                     <div class="w-full relative space-y-14">
                         <div class="flex-1 space-y-14 rounded-lg">

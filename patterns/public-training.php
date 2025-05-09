@@ -18,9 +18,9 @@
     <div class="bg-white">
         <div class="mx-auto">
             <div class="h-screen">
-                <div class="single-banner-text">
-                    <div class="h-screen flex isolate px-8 py-8 lg:px-14 lg:py-8">
-                        <div class="grid gap-14 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="single-banner-text w-full">
+                    <div class="h-screen flex isolate py-8 lg:py-8">
+                        <div class="grid gap-14 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 container mx-auto px-8 lg:px-14">
                             <div class="flex flex-col justify-between ">
                                 <p></p>
                                 <div class="py-14 text-left space-y-4 gs_reveal gs_reveal_fromLeft">
@@ -54,8 +54,8 @@
     </div>
 
     <div class="bg-white pt-14 pb-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative">
                         <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 space-y-8 lg:space-y-0 gap-y-0 lg:gap-y-8 gap-x-14">
@@ -82,8 +82,8 @@
     </div>
 
     <div class="bg-footer py-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-8 lg:space-y-0 gap-x-14 gs_reveal">
@@ -181,8 +181,8 @@
     </div>
 
     <div class="bg-white pt-14 pb-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative">
                         <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 space-y-8 lg:space-y-0 gap-y-0 lg:gap-y-8 gap-x-8">
@@ -230,8 +230,8 @@
     </div>
 
     <div id="registration" class="pb-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="bg-spectra-yellow rounded-xl shadow-lg p-8 lg:p-14 gs_reveal">
                     <div>
                     <div class="w-full relative space-y-8">
@@ -255,8 +255,8 @@
     </div>
 
     <div class="pb-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div>
                     <div class="w-full relative space-y-8">
                         <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 space-y-8">
@@ -288,9 +288,9 @@
         </div>
     </div>
 
-    <div class="bg-white pt-8">
-        <div class="mx-auto sm:px-0 lg:px-14 pb-14">
-            <div class="px-8 lg:px-14">
+    <div class="bg-white pt-8 pb-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-3xl lg:text-4xl text-black gs_reveal gs_reveal_fromLeft">Frequently Asked Question</h1>

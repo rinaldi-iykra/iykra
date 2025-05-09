@@ -16,8 +16,8 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}}} -->
 <main>
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="py-8 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-6xl text-black gs_reveal gs_reveal_fromLeft">TalksON AI</h1>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             
-            <div class="flex px-8 lg:px-14">
+            <div class="flex">
                 <div class="h-full w-full space-y-4 iykra-event-banner-1 rounded-xl w-full shadow-lg">
                     <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 w-full">
                         <div class="col-span-1 justify-center text-white w-full gs_reveal">
@@ -51,8 +51,8 @@
     </div>
 
     <div class="bg-white py-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
@@ -78,8 +78,8 @@
     </div>
 
     <div class="bg-footer py-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
@@ -136,8 +136,8 @@
     </div>
     
     <div class="bg-white py-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-x-8">

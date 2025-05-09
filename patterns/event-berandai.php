@@ -16,8 +16,8 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}}} -->
 <main>
     <div class="bg-white">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="px-8 py-8 lg:px-14 lg:py-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="py-8 lg:py-14">
                 <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
                     <div class="sm:col-span-1 md:col-span-1 lg:col-span-2 content-start text-left">
                         <h1 class="iykra-sg text-6xl text-black gs_reveal gs_reveal_fromLeft">BerandAI</h1>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex px-8 lg:px-14">
+            <div class="flex">
                 <div class="h-full space-y-4 iykra-event-banner-2 shadow-lg rounded-xl w-full">
                     <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 w-full">
                         <div class="col-span-1 justify-center text-white py-14 w-full gs_reveal">
@@ -46,8 +46,8 @@
     </div>
 
     <div class="bg-white pt-14 sm:pb-0 md:pb-0 lg:pb-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative">
                         <div class="flex grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5">
@@ -93,6 +93,7 @@
             </div>
         </div>
     </div>
+
     <div class="bg-white pb-14 sm:block md:block lg:hidden">
         <div class="mx-auto sm:px-0 lg:px-14">
             <div class="flex isolate px-8 lg:px-14">
@@ -118,8 +119,8 @@
     </div>
 
     <div class="bg-footer py-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative space-y-14">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
@@ -176,8 +177,8 @@
     </div>
     
     <div class="bg-white py-14">
-        <div class="mx-auto sm:px-0 lg:px-14">
-            <div class="relative px-8 lg:px-14">
+        <div class="container mx-auto px-8 lg:px-14">
+            <div class="relative">
                 <div class="">
                     <div class="w-full relative">
                         <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-4 space-y-4 md:space-y-0 lg:space-y-0 gs_reveal">

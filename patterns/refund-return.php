@@ -22,7 +22,7 @@
                     <div class="flex flex-col justify-between ">
                         <div class="pt-14 text-left space-y-4 gs_reveal gs_reveal_fromLeft">
                             <p class="iykra-sg text-5xl lg:text-6xl text-black">Refund and Returns Policy</p>
-                            <h1 class="iykra-gs text-lg lg:text-xl text-black">Last updated: April 30, 2025</h1>
+                            <h1 class="iykra-gs text-lg lg:text-xl text-black">Last updated: May 06, 2025</h1>
                         </div>
                     </div>
                 </div>
@@ -33,24 +33,36 @@
                 <div class="grid gap-14 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 pb-14">
                     <div class="sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-2">
                         <h2 class="iykra-sg text-xl lg:text-2xl">Kebijakan Refund Public Training IYKRA</h2>
-                        <h2 class="iykra-gs text-lg lg:text-xl">Refund Seratus Persen</h2>
+                        <h2 class="iykra-gs text-lg lg:text-xl">Refund (dengan catatan):</h2>
                         <ul class="list-disc ml-8">
-                            <li class="iykra-gs text-sm lg:text-base">Diberikan jika jumlah peserta kurang dari sepuluh orang (penentuan dilakukan oleh IYKRA tiga hari sebelum training).</li>
-                            <li class="iykra-gs text-sm lg:text-base">Diberikan jika peserta mengajukan refund maksimal tujuh hari sebelum pelaksanaan training.</li>
-                            <li class="iykra-gs text-sm lg:text-base">Diberikan jika terjadi kondisi force majeure yang menghalangi pelaksanaan acara.</li>
+                            <li class="iykra-gs text-sm lg:text-base">Jika terjadi pembatalan dari pihak penyelenggara karena alasan tertentu yang membuat acara tidak dapat berjalan. </li>
+                            <li class="iykra-gs text-sm lg:text-base">Jika peserta mengajukan refund maksimal H-7 sebelum training.</li>
+                            <li class="iykra-gs text-sm lg:text-base">Jika terjadi force majeure yang membuat acara tidak dapat berjalan.</li>
                         </ul>
-                        <h2 class="iykra-gs text-lg lg:text-xl">Pembatalan Peserta</h2>
-                        <p class="iykra-gs text-sm lg:text-base">Jika peserta membatalkan keikutsertaannya kurang dari tujuh hari, biaya pendaftaran seratus persen hangus.</p>
-                        <h4 class="iykra-gs text-base lg:text-lg">Keadaan Darurat</h4>
-                        <p class="iykra-gs text-sm lg:text-base">Dalam kondisi darurat atau sakit dengan bukti medis dari rumah sakit, peserta dapat dijadwalkan ulang tanpa biaya tambahan, tergantung ketersediaan kelas.</p>
-                        <h4 class="iykra-gs text-base lg:text-lg">Biaya Administrasi</h4>
-                        <p class="iykra-gs text-sm lg:text-base">Semua pengembalian dana akan dikenakan biaya administrasi sebesar lima belas persen dari total biaya pendaftaran.</p>
-                        <h4 class="iykra-gs text-base lg:text-lg">Penjadwalan Ulang</h4>
-                        <p class="iykra-gs text-sm lg:text-base">Peserta yang tidak dapat hadir pada jadwal yang telah ditentukan dapat memilih untuk mengikuti pelatihan di jadwal berikutnya, tergantung ketersediaan tempat.</p>
-                        <h4 class="iykra-gs text-base lg:text-lg">No-Show</h4>
-                        <p class="iykra-gs text-sm lg:text-base">Tidak ada pengembalian dana untuk peserta yang tidak hadir tanpa pemberitahuan yang jelas sebelumnya (no-show).</p>
-                        <h4 class="iykra-gs text-base lg:text-lg">Proses Refund</h4>
-                        <p class="iykra-gs text-sm lg:text-base">Pengembalian dana akan diproses dalam waktu tujuh hingga empat belas hari kerja setelah pengajuan disetujui.</p>
+                        <p class="iykra-gs text-sm lg:text-base"><strong>Catatan</strong>: Semua bentuk refund dipotong biaya administrasi 15%</p>
+
+                        <h2 class="iykra-gs text-lg lg:text-xl pt-4">Pembatalan oleh Peserta</h2>
+                        <ul class="list-disc ml-8">
+                            <li class="iykra-gs text-sm lg:text-base">Jika membatalkan kurang dari H-7, biaya yang sudah dibayarkan sepenuhnya hangus (tidak bisa dikembalikan).</li>
+                            <li class="iykra-gs text-sm lg:text-base">Jika membatalkan saat acara sudah berjalan, tidak ada refund.</li>
+                            <li class="iykra-gs text-sm lg:text-base">No-show (tidak hadir tanpa pemberitahuan) → tidak ada refund.</li>
+                        </ul>
+
+                        <h2 class="iykra-gs text-lg lg:text-xl pt-4">Keadaan Darurat</h2>
+                        <p class="iykra-gs text-sm lg:text-base">Jika peserta mengalami darurat atau sakit rawat inap (dengan bukti medis), dapat dijadwalkan ulang tanpa biaya tambahan, sesuai ketersediaan kelas.</p>
+
+
+                        <h2 class="iykra-gs text-lg lg:text-xl pt-4">Penjadwalan Ulang</h2>
+                        <p class="iykra-gs text-sm lg:text-base">Peserta yang tidak dapat hadir bisa ikut di jadwal berikutnya, tergantung ketersediaan.</p>
+
+
+                        <h2 class="iykra-gs text-lg lg:text-xl pt-4">Proses Refund</h2>
+                        <ul class="list-disc ml-8">
+                            <li class="iykra-gs text-sm lg:text-base">Pengembalian dana akan diproses dalam waktu maksimal 30 hari kerja setelah pengajuan disetujui.</li>
+                            <li class="iykra-gs text-sm lg:text-base">Semua refund dikenakan potongan biaya administrasi 15%</li>
+                        </ul>
+
+                        <p class="iykra-gs text-sm lg:text-base pt-8"><strong>Catatan</strong>: Kebijakan ini dibuat untuk menjaga keberlangsungan operasional IYKRA sekaligus memberikan kejelasan hak dan kewajiban peserta. Pertanyaan atau permintaan khusus dapat diajukan melalui email resmi IYKRA.</p>
                     </div>
                 </div>
             </div>
