@@ -706,3 +706,79 @@ add_shortcode( 'specific_jobs_display', 'get_jobs_data_specific' );
 //     }
 //     return $template;
 // });
+add_action( 'after_setup_theme', function() {
+    add_theme_support( 'woocommerce' );
+} );
+
+add_filter( 'woocommerce_checkout_fields', function( $fields ) {
+    // Name
+    $fields['billing']['billing_first_name']['priority'] = 10;
+    $fields['billing']['billing_first_name']['label'] = 'Nama Depan';
+    $fields['billing']['billing_first_name']['placeholder'] = 'Masukkan nama depan';
+    $fields['billing']['billing_first_name']['required'] = true;
+    $fields['billing']['billing_first_name']['label_class'][] = 'iykra-sg text-sm lg:text-base pt-2';
+    $fields['billing']['billing_first_name']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    
+    $fields['billing']['billing_last_name']['priority'] = 20;
+    $fields['billing']['billing_last_name']['label'] = 'Nama Belakang';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Masukkan nama belakang';
+    $fields['billing']['billing_last_name']['required'] = true;
+    $fields['billing']['billing_last_name']['label_class'][] = 'iykra-sg text-sm lg:text-base pt-2';
+    $fields['billing']['billing_last_name']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    
+    // Company
+    $fields['billing']['billing_company']['priority'] = 30;
+    $fields['billing']['billing_company']['label'] = 'Perusahaan / Instansi';
+    $fields['billing']['billing_company']['placeholder'] = 'Masukkan nama perusahaan / instansi anda saat ini';
+    $fields['billing']['billing_company']['required'] = true;
+    $fields['billing']['billing_company']['label_class'][] = 'iykra-sg text-sm lg:text-base';
+    $fields['billing']['billing_company']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+
+    // Country
+    $fields['billing']['billing_country']['priority'] = 60;
+    $fields['billing']['billing_country']['label'] = 'Negara';
+    $fields['billing']['billing_country']['placeholder'] = 'Pilih negara / region anda saat ini';
+    $fields['billing']['billing_country']['required'] = true;
+    $fields['billing']['billing_country']['label_class'][] = 'iykra-sg text-sm lg:text-base';
+    $fields['billing']['billing_country']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+
+    // Email
+    $fields['billing']['billing_email']['priority'] = 50;
+    $fields['billing']['billing_email']['label'] = 'Email';
+    $fields['billing']['billing_email']['placeholder'] = 'Masukkan alamat Email aktif';
+    $fields['billing']['billing_email']['required'] = true;
+    $fields['billing']['billing_email']['label_class'][] = 'iykra-sg text-sm lg:text-base';
+    $fields['billing']['billing_email']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    
+    // Phone
+    $fields['billing']['billing_phone']['priority'] = 40;
+    $fields['billing']['billing_phone']['label'] = 'Nomor WhatsApp';
+    $fields['billing']['billing_phone']['placeholder'] = 'Masukkan No WA aktif';
+    $fields['billing']['billing_phone']['required'] = true;
+    $fields['billing']['billing_phone']['label_class'][] = 'iykra-sg text-sm lg:text-base';
+    $fields['billing']['billing_phone']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    
+    // Unset
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_state']);
+
+    return $fields;
+});
+
+add_filter( 'woocommerce_checkout_fields', function( $fields ) {
+
+    // Order Notes
+    if ( isset( $fields['order']['order_comments'] ) ) {
+        $fields['order']['order_comments']['label'] = 'Catatan pesanan';
+        $fields['order']['order_comments']['placeholder'] = 'Tulis pesan orderan di sini...';
+        $fields['order']['order_comments']['required'] = false;
+        $fields['order']['order_comments']['label_class'][] = 'iykra-sg text-sm lg:text-base pt-2';
+        $fields['order']['order_comments']['class'] = array('iykra-gs', 'form-row-wide', 'text-base', 'rounded-md', 'focus:outline-none');
+        $fields['order']['order_comments']['priority'] = 10;
+    }
+
+    return $fields;
+});

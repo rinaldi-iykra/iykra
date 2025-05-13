@@ -1380,3 +1380,45 @@ p.divider.white {
 .iykra-privacy:hover {
     color: var(--spectra-yellow);
 }
+
+
+/* Woocommerce style */
+.focus\:outline-none>a:focus {
+    outline: none;
+}
+.product.type-product {
+    padding-top: 1rem;
+}
+.woocommerce-product-gallery__trigger {
+    z-index: 1 !important;
+}
+@media (min-width: 1000px) {
+    .product.type-product {
+        display: flex;
+        gap: 10rem;
+    }
+    .wc-block-product.product.type-product {
+        display: block;
+    }
+}
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+    font-size: initial !important;
+    padding: .75rem !important;
+}
+.woocommerce-page .woocommerce-cart-form #coupon_code {
+    height: 40px !important;
+    padding: 6px 6px 5px;
+    border: none;
+}
+.woocommerce form .form-row {
+    margin-bottom: 0px;
+}
+.woocommerce-page table.shop_table {
+    width: 100%;
+}
+div.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout {
+    display: none !important;
+}
+li.wc_payment_method.payment_method_midtrans > label {
+    display: inline-flex;
+}

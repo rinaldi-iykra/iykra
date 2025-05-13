@@ -181,12 +181,13 @@
                                 </div>
 
                                 <div class="py-4 flex justify-between col-span-1 lg:col-span-2">
-                                    <button
+                                    <p></p>
+                                    <!-- <button
                                         data-link="/careers"
                                         class="text-sm lg:text-base btn-primary-outline text-black rounded-full px-8 py-3 iykra-gs focus:outline-none"
                                     >
                                         Kembali
-                                    </button>
+                                    </button> -->
                                     <button 
                                         id="submitJobBtn" 
                                         type="submit"
