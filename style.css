@@ -1419,6 +1419,6 @@ p.divider.white {
 div.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout {
     display: none !important;
 }
-li.wc_payment_method.payment_method_midtrans > label {
+li.wc_payment_method > label {
     display: inline-flex;
 }

@@ -706,6 +706,7 @@ add_shortcode( 'specific_jobs_display', 'get_jobs_data_specific' );
 //     }
 //     return $template;
 // });
+add_filter('woocommerce_checkout_show_terms', '__return_true');
 add_action( 'after_setup_theme', function() {
     add_theme_support( 'woocommerce' );
 } );
@@ -717,14 +718,14 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_first_name']['placeholder'] = 'Masukkan nama depan';
     $fields['billing']['billing_first_name']['required'] = true;
     $fields['billing']['billing_first_name']['label_class'][] = 'iykra-sg text-sm lg:text-base pt-2';
-    $fields['billing']['billing_first_name']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    $fields['billing']['billing_first_name']['input_class'][] = 'w-full iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
     
     $fields['billing']['billing_last_name']['priority'] = 20;
     $fields['billing']['billing_last_name']['label'] = 'Nama Belakang';
     $fields['billing']['billing_last_name']['placeholder'] = 'Masukkan nama belakang';
     $fields['billing']['billing_last_name']['required'] = true;
     $fields['billing']['billing_last_name']['label_class'][] = 'iykra-sg text-sm lg:text-base pt-2';
-    $fields['billing']['billing_last_name']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    $fields['billing']['billing_last_name']['input_class'][] = 'w-full iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
     
     // Company
     $fields['billing']['billing_company']['priority'] = 30;
@@ -732,7 +733,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_company']['placeholder'] = 'Masukkan nama perusahaan / instansi anda saat ini';
     $fields['billing']['billing_company']['required'] = true;
     $fields['billing']['billing_company']['label_class'][] = 'iykra-sg text-sm lg:text-base';
-    $fields['billing']['billing_company']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    $fields['billing']['billing_company']['input_class'][] = 'w-full iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
 
     // Country
     $fields['billing']['billing_country']['priority'] = 60;
@@ -748,7 +749,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_email']['placeholder'] = 'Masukkan alamat Email aktif';
     $fields['billing']['billing_email']['required'] = true;
     $fields['billing']['billing_email']['label_class'][] = 'iykra-sg text-sm lg:text-base';
-    $fields['billing']['billing_email']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    $fields['billing']['billing_email']['input_class'][] = 'w-full iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
     
     // Phone
     $fields['billing']['billing_phone']['priority'] = 40;
@@ -756,7 +757,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_phone']['placeholder'] = 'Masukkan No WA aktif';
     $fields['billing']['billing_phone']['required'] = true;
     $fields['billing']['billing_phone']['label_class'][] = 'iykra-sg text-sm lg:text-base';
-    $fields['billing']['billing_phone']['input_class'][] = 'iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
+    $fields['billing']['billing_phone']['input_class'][] = 'w-full iykra-gs block rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 text-sm lg:text-base'; 
     
     // Unset
     unset($fields['billing']['billing_address_1']);
@@ -769,7 +770,6 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
 });
 
 add_filter( 'woocommerce_checkout_fields', function( $fields ) {
-
     // Order Notes
     if ( isset( $fields['order']['order_comments'] ) ) {
         $fields['order']['order_comments']['label'] = 'Catatan pesanan';
@@ -782,3 +782,15 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
 
     return $fields;
 });
+
+remove_action('woocommerce_register_form', 'wc_registration_privacy_policy_text', 20);
+add_action('woocommerce_register_form', 'custom_wc_registration_privacy_policy_text', 20);
+function custom_wc_registration_privacy_policy_text() {
+    echo '<div class="woocommerce-privacy-policy-text iykra-gs text-base lg:text-lg">';
+    echo 'Saya memberikan persetujuan kepada IYKRA untuk memproses data pribadi saya sesuai dengan Kebijakan '; 
+    echo '<a href="/privacy-policy" target="_blank" class="iykra-sg text-base lg:text-lg">';
+    echo 'Privasi dan Syarat & Ketentuan';
+    echo '</a>';
+    echo ' yang berlaku.';
+    echo '</div>';
+}
