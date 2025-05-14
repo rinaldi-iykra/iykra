@@ -785,6 +785,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
 
 remove_action('woocommerce_register_form', 'wc_registration_privacy_policy_text', 20);
 add_action('woocommerce_register_form', 'custom_wc_registration_privacy_policy_text', 20);
+
 function custom_wc_registration_privacy_policy_text() {
     echo '<div class="woocommerce-privacy-policy-text iykra-gs text-base lg:text-lg">';
     echo 'Saya memberikan persetujuan kepada IYKRA untuk memproses data pribadi saya sesuai dengan Kebijakan '; 

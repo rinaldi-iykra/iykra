@@ -268,8 +268,8 @@
                                 <div class="w-full rounded-xl shadow-xl bg-footer p-8 lg:p-14 text-center">
                                     <div class="space-y-4 flex flex-col justify-between">
                                         <p class="iykra-sg text-xl lg:text-2xl">2 Hari Pelatihan Offline (full day)</p>
-                                        <p class="iykra-sg text-3xl lg:text-4xl">Rp 3.000.000*</p>
-                                        <p class="iykra-gs text-base lg:text-lg">*exclude VAT</p>
+                                        <p class="iykra-sg text-3xl lg:text-4xl">Rp 3.500.000*</p>
+                                        <p class="iykra-gs text-base lg:text-lg">*include VAT</p>
                                         <div class="space-y-4 lg:space-y-0 lg:space-x-4 flex flex-col lg:flex-row mx-auto">
                                             <a href="#registration" class="custom-scroll btn-primary text-gs text-sm lg:text-base rounded-full px-8 py-3">Registrasi</a>
                                             <a href="https://api.whatsapp.com/send/?phone=6281298952818&text=Hai+IYKRA%2C%20saya%20tertarik%20ingin%20tahu%20lebih%20lanjut+mengenai+program+-+program+yang+tersedia.+Bisa+bantu+informasinya?&type=phone_number&app_absent=0" 
@@ -337,7 +337,7 @@
                             <i data-target="faq-5" class="fa fa-plus text-black text-xl text-right content-center cursor-pointer toggle-icon"></i>
                         </div>
                         <div id="faq-5" class="iykra-faq-content hidden overflow-hidden transition-all duration-500 ease-in-out pt-4">
-                            <p class="iykra-gs text-base">Biaya investasi untuk mengikuti pelatihan selama dua hari penuh secara offline adalah Rp 3.000.000 (belum termasuk PPN).</p>
+                            <p class="iykra-gs text-base">Biaya investasi untuk mengikuti pelatihan selama dua hari penuh secara offline adalah Rp 3.500.000 (sudah termasuk PPN).</p>
                         </div>
                         <p class="pt-4 divider gray"></p>
                         <div class="w-full rounded-xl grid grid-cols-12 py-4">
