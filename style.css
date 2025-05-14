@@ -1422,3 +1422,12 @@ div.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout {
 li.wc_payment_method > label {
     display: inline-flex;
 }
+.xendit-cc-icons {
+    display: block !important;
+}
+.iykra-checkout_coupon {
+    border: 1px solid #cfc8d8;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+}

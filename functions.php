@@ -795,3 +795,9 @@ function custom_wc_registration_privacy_policy_text() {
     echo ' yang berlaku.';
     echo '</div>';
 }
+
+remove_action('woocommerce_review_order_before_submit', 'xendit_add_disclaimer_text', 9);
+add_action('woocommerce_review_order_before_submit', 'custom_xendit_add_disclaimer_text', 9);
+function custom_xendit_add_disclaimer_text() {
+    echo '';
+}
