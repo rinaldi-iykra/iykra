@@ -1423,7 +1423,7 @@ li.wc_payment_method > label {
     display: inline-flex;
 }
 .xendit-cc-icons {
-    display: block !important;
+    display: contents !important;
 }
 .iykra-checkout_coupon {
     border: 1px solid #cfc8d8;
