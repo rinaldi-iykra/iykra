@@ -801,3 +801,11 @@ add_action('woocommerce_review_order_before_submit', 'custom_xendit_add_disclaim
 function custom_xendit_add_disclaimer_text() {
     echo '';
 }
+
+// Disable WooCommerce cart fragments to reduce AJAX calls
+add_action( 'wp_enqueue_scripts', 'disable_woocommerce_cart_fragments', 11 );
+function disable_woocommerce_cart_fragments() {
+    if ( function_exists( 'is_woocommerce' ) ) {
+        wp_dequeue_script( 'wc-cart-fragments' );
+    }
+}
