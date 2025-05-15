@@ -21,7 +21,7 @@
             <p class="iykra-gs text-lg lg:text-xl text-white mx-8 text-center">9 - 10 Juli 2025</p>
         </div>
         <div class="w-full text-center">
-            <a href="https://iykra.com/product/ai-for-bussines/" class="btn-primary-outline text-gs text-sm rounded-full px-8 py-3">Registrasi Sekarang</a>
+            <a href="https://iykra.com/product/public-training-1/" class="btn-primary-outline text-gs text-sm rounded-full px-8 py-3">Registrasi Sekarang</a>
         </div>
     </div>
 </div>
