@@ -629,6 +629,9 @@ a.navbar-link:hover {
 .navbar a:hover, .dropdown:hover .dropbtn {
     color: var(--spectra-yellow);
 }
+.dropdown:hover .btn-primary {
+    color: var(--black) !important;
+}
   
 .dropdown-content {
 	display: none;
