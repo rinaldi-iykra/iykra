@@ -740,6 +740,11 @@
 			"title": "IYKRA Career Apply"
 		},
 		{
+			"name": "iykra-career-apply-success",
+			"postTypes": ["page"],
+			"title": "IYKRA Career Apply Success"
+		},
+		{
 			"name": "iykra-home",
 			"postTypes": ["page"],
 			"title": "IYKRA Home"

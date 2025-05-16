@@ -407,6 +407,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
         
+            // Set-button jadi btn-disabled
+            const submitButton = document.getElementById('submitJobBtn');
+            submitButton.classList.add('btn-disabled');
+            submitButton.classList.remove('btn-primary');
+
             // Siapkan data form
             const formData = new FormData();
             formData.append('id', id);
@@ -443,7 +448,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const data = await response.json();
         
                 if (response.status === 200) {
-                    alert('Lamaran berhasil dikirim!');
+
+                    const redirectUrl = 'https://iykra.com/careers/apply/success/?job_id=' + id;
+                    window.location.href = redirectUrl;
+
                 } else {
                     alert(data.message || 'Terjadi kesalahan saat mengirim lamaran.');
                 }

@@ -316,6 +316,7 @@ function iykra_register_block_patterns() {
     $pattern_about_file = get_template_directory() . '/patterns/about.php';
     $pattern_career_file = get_template_directory() . '/patterns/career.php';
     $pattern_career_apply_file = get_template_directory() . '/patterns/career-apply.php';
+    $pattern_career_apply_success_file = get_template_directory() . '/patterns/career-apply-success.php';
 
     if ( file_exists( $pattern_home_file ) ) {
 		ob_start();
@@ -361,6 +362,7 @@ function iykra_register_block_patterns() {
             )
         );
     }
+
 	if ( file_exists( $pattern_career_apply_file ) ) {
 		ob_start();
         include $pattern_career_apply_file;
@@ -372,6 +374,21 @@ function iykra_register_block_patterns() {
                 'title'       => __( 'Career Apply Page', 'iykra' ),
                 'description' => __( 'The main career apply page layout.', 'iykra' ),
                 'content'     => $pattern_career_apply_content,
+            )
+        );
+	}
+
+    if ( file_exists( $pattern_career_apply_success_file ) ) {
+		ob_start();
+        include $pattern_career_apply_success_file;
+        $pattern_career_apply_success_content = ob_get_clean();
+
+        register_block_pattern(
+            'iykra/career-apply-success-page',
+            array(
+                'title'       => __( 'Career Apply Success Page', 'iykra' ),
+                'description' => __( 'The main career apply success page layout.', 'iykra' ),
+                'content'     => $pattern_career_apply_success_content,
             )
         );
 	}
