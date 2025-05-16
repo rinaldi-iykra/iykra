@@ -129,8 +129,8 @@ add_action( 'wp_enqueue_scripts', 'iykra_enqueue_assets_scripts' );
 if ( ! function_exists('iykra_enqueue_scripts') ) :
 	function iykra_enqueue_scripts() {
 		wp_enqueue_script(
-			'iykra-script',
-			get_parent_theme_file_uri( 'script.js' ),
+			'iykra-scripts',
+			get_parent_theme_file_uri( 'scripts.js' ),
 		);
 	}
 endif;
