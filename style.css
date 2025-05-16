@@ -1434,3 +1434,195 @@ li.wc_payment_method > label {
     text-align: left;
     border-radius: 5px;
 }
+
+/* Woocommerce cant edit because on react */
+.wc-block-order-confirmation-status>h1 {
+    font-family: "Space Grotesk Semi-Bold";
+}
+.wc-block-order-confirmation-status>p {
+    font-family: "General Sans";
+}
+
+.wc-block-order-confirmation-totals-wrapper {
+    font-family: "General Sans";
+}
+th.wc-block-order-confirmation-totals__label, th.wc-block-order-confirmation-totals__product, th.wc-block-order-confirmation-totals__total {
+    font-family: "Space Grotesk Semi-Bold";
+}
+.wc-block-order-confirmation-summary-list-item__key {
+    font-family: "Space Grotesk Semi-Bold";
+}
+.wc-block-order-confirmation-summary-list-item__value {
+    font-family: "General Sans";
+}
+.wp-block-post-title {
+    font-family: "Space Grotesk Semi-Bold";
+    padding-bottom: 2rem !important;
+}
+.woocommerce-MyAccount-content>p {
+    font-family: "General Sans";
+}
+.woocommerce-MyAccount-content>p>.order-number, .woocommerce-MyAccount-content>p>.order-date, .woocommerce-MyAccount-content>p>.order-status {
+    font-family: "Space Grotesk Semi-Bold";
+}
+.woocommerce-order-details__title, .woocommerce-column__title {
+    font-family: "Space Grotesk Semi-Bold";
+    padding: 2rem 0px;
+}
+.woocommerce table.shop_table th {
+    font-family: "Space Grotesk Semi-Bold";
+}
+.woocommerce table.shop_table td {
+    font-family: "General Sans";
+    font-weight: lighter !important;
+}
+section.woocommerce-customer-details>address {
+    font-family: "General Sans";
+}
+.woocommerce-address-fields__field-wrapper>p>label {
+    font-family: "Space Grotesk Semi-Bold";
+    font-size: 1rem;
+}
+.woocommerce-MyAccount-content>p>strong {
+    font-family: "General Sans";
+}
+.woocommerce-account .wp-block-post-title {
+    padding-top: 3.5rem !important;
+    width: 100%;
+    max-width: 100%;
+}
+.wp-block-post-content-is-layout-constrained>div.woocommerce {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+@media (min-width:640px) {
+    .wc-block-order-confirmation-status {
+        padding-top: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 640px !important;
+    }
+    .wc-block-order-confirmation-totals-wrapper {
+        padding-bottom: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 640px !important;
+    }
+    .wc-block-order-confirmation-summary {
+        padding: 2rem 3.5rem !important;
+        max-width: 640px !important;
+    }
+    div.is-layout-constrained.wp-block-group-is-layout-constrained {
+        padding: 2rem 3.5rem !important;
+        max-width: 640px !important;
+        margin: auto;
+    }
+    .wc-block-order-confirmation-status-description {
+        padding: 1rem 3.5rem;
+        min-height: 500px;
+        max-width: 640px !important;
+    }
+}
+@media (min-width:768px) {
+    .wc-block-order-confirmation-status {
+        padding-top: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 768px !important;
+    }
+    .wc-block-order-confirmation-totals-wrapper {
+        padding-bottom: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 768px !important;
+    }
+    .wc-block-order-confirmation-summary {
+        padding: 2rem 3.5rem !important;
+        max-width: 768px !important;
+    }
+    div.is-layout-constrained.wp-block-group-is-layout-constrained {
+        padding: 2rem 3.5rem !important;
+        max-width: 768px !important;
+        margin: auto;
+    }
+    .wc-block-order-confirmation-status-description {
+        padding: 1rem 3.5rem;
+        min-height: 500px;
+        max-width: 768px !important;
+    }
+}
+@media (min-width:1024px) {
+    .wc-block-order-confirmation-status {
+        padding-top: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 1024px !important;
+    }
+    .wc-block-order-confirmation-totals-wrapper {
+        padding-bottom: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width:1024px !important;
+    }
+    .wc-block-order-confirmation-summary {
+        padding: 2rem 3.5rem !important;
+        max-width: 1024px !important;
+    }
+    div.is-layout-constrained.wp-block-group-is-layout-constrained {
+        padding: 2rem 3.5rem !important;
+        max-width: 1024px !important;
+        margin: auto;
+    }
+    .wc-block-order-confirmation-status-description {
+        padding: 1rem 3.5rem;
+        min-height: 500px;
+        max-width: 1024px !important;
+    }
+}
+@media (min-width:1280px) {
+    .wc-block-order-confirmation-status {
+        padding-top: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 1280px !important;
+    }
+    .wc-block-order-confirmation-totals-wrapper {
+        padding-bottom: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 1280px !important;
+    }
+    .wc-block-order-confirmation-summary {
+        padding: 2rem 3.5rem !important;
+        max-width: 1280px !important;
+    }
+    div.is-layout-constrained.wp-block-group-is-layout-constrained {
+        padding: 2rem 3.5rem !important;
+        max-width: 1280px !important;
+        margin: auto;
+    }
+    .wc-block-order-confirmation-status-description {
+        padding: 1rem 3.5rem;
+        min-height: 500px;
+        max-width: 1280px !important;
+    }
+}
+@media (min-width:1536px) {
+    .wc-block-order-confirmation-status {
+        padding-top: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 1536px !important;
+    }
+    .wc-block-order-confirmation-totals-wrapper {
+        padding-bottom: 3.5rem !important;
+        padding: 0px 3.5rem;
+        max-width: 1536px !important;
+    }
+    .wc-block-order-confirmation-summary {
+        padding: 2rem 3.5rem !important;
+        max-width: 1536px !important;
+    }
+    div.is-layout-constrained.wp-block-group-is-layout-constrained {
+        padding: 2rem 3.5rem !important;
+        max-width: 1536px !important;
+        margin: auto;
+    }
+    .wc-block-order-confirmation-status-description {
+        padding: 1rem 3.5rem;
+        min-height: 500px;
+        max-width: 1536px !important;
+    }
+}
