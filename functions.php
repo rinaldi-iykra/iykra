@@ -826,3 +826,41 @@ function disable_woocommerce_cart_fragments() {
         wp_dequeue_script( 'wc-cart-fragments' );
     }
 }
+
+// Custom ID Number for woocommerce
+add_filter('woocommerce_checkout_fields', 'custom_modify_checkout_fields');
+function custom_modify_checkout_fields($fields) {
+    $fields['billing']['id_number'] = array(
+        'type'        => 'text',
+        'label'       => 'Nomor Identitas (KTP)',
+        'placeholder' => 'Masukkan nomor identitas',
+        'required'    => true,
+        'priority'    => 55,
+        'label_class' => array('iykra-sg', 'text-sm', 'lg:text-base'),
+        'input_class' => array(
+            'w-full', 'iykra-gs', 'block', 'rounded-md', 'border-0',
+            'px-4', 'py-2', 'text-gray-900', 'shadow-sm',
+            'ring-1', 'ring-gray-300', 'placeholder:text-gray-400',
+            'focus:ring-2', 'focus:ring-blue-900',
+            'text-sm', 'lg:text-base'
+        ),
+    );
+
+    return $fields;
+}
+
+//// validation on checkout
+add_action('woocommerce_checkout_process', 'custom_validate_id_number_field');
+function custom_validate_id_number_field() {
+    if (empty($_POST['id_number'])) {
+        wc_add_notice(__('Please enter your ID number.'), 'error');
+    }
+}
+//// showing on admin order
+add_action('woocommerce_checkout_create_order', 'custom_save_id_number_to_order', 10, 2);
+function custom_save_id_number_to_order($order, $data) {
+    if (!empty($_POST['id_number'])) {
+        $order->update_meta_data('id_number', sanitize_text_field($_POST['id_number']));
+    }
+}
+
