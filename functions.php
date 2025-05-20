@@ -189,7 +189,7 @@ if ( ! function_exists('iykra_enqueue_scripts') ) :
 	function iykra_enqueue_scripts() {
 		wp_enqueue_script(
 			'iykra-scripts',
-			get_parent_theme_file_uri( 'scripts.js' ),
+			get_parent_theme_file_uri( 'script.js' ),
 		);
 
         wp_localize_script('iykra-scripts', 'iykra_ajax', [
