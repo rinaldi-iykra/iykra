@@ -318,6 +318,73 @@ $(document).ready(function() {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    if (document.getElementById('downloadBookletBtn')) {
+
+        document.getElementById('downloadBookletBtn').addEventListener('click', async function(e)  {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            let isValid = true;
+
+            if (!name) {
+                document.getElementById('err-name').textContent = "Nama wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-name').textContent = "";
+            }
+
+            if (!email) {
+                document.getElementById('err-email').textContent = "Email wajib diisi";
+                isValid = false;
+            } else {
+                document.getElementById('err-email').textContent = "";
+            }
+
+            if (!isValid) {
+                alert('Ada beberapa data yang masih kosong, silahkan isi terlebih dahulu.');
+                return;
+            }
+
+            this.classList.add('btn-disabled');
+            this.classList.remove('btn-primary');
+
+            // calling the wordpress ajax function with name and email
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('action', 'iykra_download_booklet');
+
+            fetch(iykra_ajax.ajax_url, {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams({
+                    action: "iykra_download_booklet",
+                    name: name,
+                    email: email
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                this.classList.add('btn-primary');
+                this.classList.remove('btn-disabled');
+                
+                if (data.success) {
+                    const downloadUrl = data.data.file_url;
+                    const link = document.createElement('a');
+                    link.href = downloadUrl;
+                    link.download = '';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
+                } else {
+                    alert('Gagal mengirim data');
+                }
+            }).catch(err => console.error('AJAX error:', err));
+        });
+    }
+
     if (document.getElementById('submitJobBtn')) {
         document.getElementById('submitJobBtn').addEventListener('click', async function(e)  {
             e.preventDefault(); // Mencegah submit form default
@@ -777,6 +844,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// Event
+function openBookletModal(el) {
+    document.getElementById("bookletModal").classList.remove("hidden");
+}
+
+
 // Career
 function openJobModal(el) {
     const title = el.getAttribute("data-title");
@@ -833,7 +907,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var isModal = document.getElementById("closeModal");
     if (isModal) {
         document.getElementById("closeModal").addEventListener("click", () => {
-            document.getElementById("jobModal").classList.add("hidden");
+            if (document.getElementById("jobModal")) {
+                document.getElementById("jobModal").classList.add("hidden");
+            }
+            if (document.getElementById("bookletModal")) {
+                document.getElementById("bookletModal").classList.add("hidden");
+            }
         });
     }
 

@@ -126,12 +126,75 @@ if ( ! function_exists('iykra_enqueue_assets_scripts') ) :
 endif;
 add_action( 'wp_enqueue_scripts', 'iykra_enqueue_assets_scripts' );
 
+// Ajax for submit booklet download
+add_action('wp_ajax_iykra_download_booklet', 'submit_iykra_download_booklet');
+add_action('wp_ajax_nopriv_iykra_download_booklet', 'submit_iykra_download_booklet');
+function submit_iykra_download_booklet() {
+    $name = sanitize_text_field($_POST['name']);
+    $email = sanitize_email($_POST['email']);
+
+    $baseUrl = 'https://api-form.iykra.com/booklet';
+    $data = [
+        'name' => $name,
+        'email' => $email
+    ];
+    
+    $response = wp_remote_post($baseUrl, [
+        'body' => json_encode($data),
+        'headers' => [
+            'Content-Type' => 'application/json',
+        ],
+    ]);
+
+    if (is_wp_error($response)) {
+        $error_message = $response->get_error_message();
+        wp_send_json_error([
+            'status' => 'error',
+            'message' => 'Error: ' . $error_message
+        ]);
+
+    } else {
+        $response_body = wp_remote_retrieve_body($response);
+        $json_response = json_decode($response_body, true);
+
+        if (isset($json_response['success']) && $json_response['success'] === true) {
+            $file_name = '[To-Share] IYKRA Public Training Booklet 2025.pdf';
+            $file_path = get_template_directory() . '/assets/downloads/' . $file_name;
+
+        if (!file_exists($file_path)) {
+            wp_send_json_error([
+                'status' => 'error',
+                'message' => 'File not found on the server.'
+            ]);
+        }
+        $encoded_file_name = rawurlencode($file_name);
+        $file_url = get_template_directory_uri() . '/assets/downloads/' . $encoded_file_name;
+        wp_send_json_success([
+            'status' => 'success',
+            'file_url' => $file_url
+        ]);
+
+        } else {
+            wp_send_json_error([
+                'status' => 'error',
+                'message' => 'Failed to send booklet download link.'
+            ]);
+        }
+    }
+
+    wp_die();
+}
+
 if ( ! function_exists('iykra_enqueue_scripts') ) :
 	function iykra_enqueue_scripts() {
 		wp_enqueue_script(
 			'iykra-scripts',
 			get_parent_theme_file_uri( 'scripts.js' ),
 		);
+
+        wp_localize_script('iykra-scripts', 'iykra_ajax', [
+            'ajax_url' => admin_url('admin-ajax.php')
+        ]);
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'iykra_enqueue_scripts' );

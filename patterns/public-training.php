@@ -64,7 +64,11 @@
                             </div>
                             <div class="content-start">
                                 <p class="iykra-gs text-lg lg:text-xl pb-8 gs_reveal gs_reveal_fromRight">Public Training IYKRA adalah program pelatihan intensif selama 2 hari ini dirancang khusus untuk para profesional dari berbagai divisi yang ingin memperdalam keahlian praktis dalam penggunaan alat AI dan analitik untuk mendukung pengambilan keputusan bisnis yang efektif. Melalui pelatihan luring interaktif dengan studi kasus nyata, peserta tidak hanya memperoleh pemahaman teoritis, tetapi juga keterampilan teknis nyata yang siap diaplikasikan langsung untuk mengoptimalkan kinerja bisnis melalui analytics, AI tools, serta framework bisnis berbasis data.</p>
-                                <a href="https://drive.google.com/drive/u/0/folders/1lBG0mqbSIb7f4TPCxEzP93OdfxtvFTfh" target="_blank" class="text-sm lg:text-base btn-primary-outline text-black rounded-full px-8 py-3 iykra-gs">Unduh Booklet</a>
+                                <a 
+                                    onclick="openBookletModal(this)" 
+                                    class="text-sm lg:text-base btn-primary-outline text-black rounded-full px-8 py-3 iykra-gs">
+                                        Unduh Booklet
+                                </a>
                             </div>
                             <p class="divider gray sm:col-span-1 md:col-span-1 lg:col-span-2 pb-4"></p>
                             <div class="content-start">
@@ -381,6 +385,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bookletModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black bg-opacity-50">
+        <div class="flex items-center justify-center min-h-screen p-8 lg:p-16">
+            <div class="bg-white rounded-xl max-w-2xl w-full h-full relative">
+                <form id="bookletForm">
+
+                    <div class="p-8 lg:p-14">
+                        <h2 id="modalTitle" class="iykra-sg text-xl mb-2">Unduh Booklet</h2>
+                        <p id="modalDescription" class="iykra-gs text-base mb-2">Untuk mengunduh booklet silahkan lengkapi data berikut.</p>
+                        <div class="pt-8 pb-4 space-y-1 col-span-1 lg:col-span-2">
+                            <label for="name" class="iykra-sg block text-base">Nama Lengkap</label>
+                            <input type="text" id="name" placeholder="cth: John Doe" 
+                                class="iykra-gs block w-full rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 sm:text-sm" />
+                            <small class="iykra-gs text-red-500 text-xs" id="err-name"></small>
+                        </div>
+                        <div class="pb-4 space-y-1 col-span-1">
+                            <label for="email" class="iykra-sg block text-base">Email</label>
+                            <input type="email" id="email" placeholder="cth: john.doe@iykra.com"
+                                class="iykra-gs block w-full rounded-md border-0 px-4 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-900 sm:text-sm" />
+                            <small class="iykra-gs text-red-500 text-xs" id="err-email"></small>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 py-3 flex px-8 lg:px-14 rounded-b-xl gap-x-2 lg:gap-x-4 w-full justify-end">
+                        <button id="closeModal" class="text-sm lg:text-base btn-primary-outline text-black rounded-full px-8 py-2 iykra-gs">Tutup</button>
+                        <button id="downloadBookletBtn" class="text-sm lg:text-base btn-primary text-black rounded-full px-8 py-2 iykra-gs">Unduh</a>
+                    </div>
+
+                </form>
             </div>
         </div>
     </div>
