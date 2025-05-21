@@ -133,8 +133,7 @@ function submit_iykra_download_booklet() {
     $name = sanitize_text_field($_POST['name']);
     $email = sanitize_email($_POST['email']);
 
-    // $baseUrl = 'https://api-form.iykra.com/booklet';
-    $baseUrl = 'http://localhost:5001/booklet';
+    $baseUrl = 'https://api-form.iykra.com/booklet';
     $data = [
         'sheet' => 'Public Training',
         'name' => $name,
