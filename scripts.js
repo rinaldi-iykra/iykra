@@ -378,8 +378,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     link.click();
                     document.body.removeChild(link);
 
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('bookletModal').classList.add('hidden');
+
                 } else {
-                    alert('Gagal mengirim data');
+                    alert('Gagal download booklet!');
                 }
             }).catch(err => console.error('AJAX error:', err));
         });

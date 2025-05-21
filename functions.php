@@ -133,8 +133,10 @@ function submit_iykra_download_booklet() {
     $name = sanitize_text_field($_POST['name']);
     $email = sanitize_email($_POST['email']);
 
-    $baseUrl = 'https://api-form.iykra.com/booklet';
+    // $baseUrl = 'https://api-form.iykra.com/booklet';
+    $baseUrl = 'http://localhost:5001/booklet';
     $data = [
+        'sheet' => 'Public Training',
         'name' => $name,
         'email' => $email
     ];
@@ -161,18 +163,19 @@ function submit_iykra_download_booklet() {
             $file_name = '[To-Share] IYKRA Public Training Booklet 2025.pdf';
             $file_path = get_template_directory() . '/assets/downloads/' . $file_name;
 
-        if (!file_exists($file_path)) {
-            wp_send_json_error([
-                'status' => 'error',
-                'message' => 'File not found on the server.'
+            if (!file_exists($file_path)) {
+                wp_send_json_error([
+                    'status' => 'error',
+                    'message' => 'File not found on the server.'
+                ]);
+            }
+            
+            $encoded_file_name = rawurlencode($file_name);
+            $file_url = get_template_directory_uri() . '/assets/downloads/' . $encoded_file_name;
+            wp_send_json_success([
+                'status' => 'success',
+                'file_url' => $file_url
             ]);
-        }
-        $encoded_file_name = rawurlencode($file_name);
-        $file_url = get_template_directory_uri() . '/assets/downloads/' . $encoded_file_name;
-        wp_send_json_success([
-            'status' => 'success',
-            'file_url' => $file_url
-        ]);
 
         } else {
             wp_send_json_error([
@@ -189,7 +192,7 @@ if ( ! function_exists('iykra_enqueue_scripts') ) :
 	function iykra_enqueue_scripts() {
 		wp_enqueue_script(
 			'iykra-scripts',
-			get_parent_theme_file_uri( 'script.js' ),
+			get_parent_theme_file_uri( 'scripts.js' ),
 		);
 
         wp_localize_script('iykra-scripts', 'iykra_ajax', [
